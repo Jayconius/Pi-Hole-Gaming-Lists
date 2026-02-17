@@ -38,11 +38,11 @@ This list contains essential domains that should be **allowed** to ensure achiev
 If your mobile shopping app shows an error, whitelist aax-eu.amazon-adsystem.com or aax-us.amazon-adsystem.com This domain kills ads in CurseForge but might be required for some "Sponsored" search results in the Amazon app.
 
 
-## Google Shopping: 
+### Google Shopping: 
 Might need to whitelist googleads.g.doubleclick.net if Google Shopping links, referrals and shopping images break.
 
 
-## CurseForge: 
+### CurseForge: 
 Delete %AppData%\CurseForge\cache and restart application. 
 
 ## ⚖️ Maintenance
