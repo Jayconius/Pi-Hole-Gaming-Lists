@@ -1,102 +1,70 @@
-# --- ESSENTIAL GAMING DOMAINS - LAUNCHERS & STORES ---
+# ==========================================================
+#         MASTER GAMING WHITELIST - Feb 2026 EDITION
+# ==========================================================
 
-# Steam
-# Essential for login, friend lists, and achievement syncing.
-steampowered.com
-steamcommunity.com
-steam-chat.com
-steam-static.com
+# --- STEAM (Valve) ---
+steampowered.com        # Main store, login, and account management.
+steamcommunity.com      # Steam Overlay, Profiles, Trading, and Market.
+steam-chat.com          # Friends list backend and real-time chat messages.
+steam-static.com        # Static assets like images and CSS for the launcher.
+steamcontent.com        # Critical for downloading game updates and workshop mods.
+steamusercontent.com    # Cloud storage for screenshots and user-created files.
 
-# Epic Games
-# Required for game authentication, cloud saves, and achievement progress.
-epicgames.com
-tracking.epicgames.com
-metrics.ol.epicgames.com
-entitlement-public-service-prod08.ol.epicgames.com
+# --- EPIC GAMES ---
+epicgames.com           # Main store and launcher authentication.
+tracking.epicgames.com  # Required for achievement pops and syncing progress.
+metrics.ol.epicgames.com # Cloud save synchronization and telemetry logs.
+friends.ol.epicgames.com # Core Friends list service and "Social Overlay."
+friends-public-service-prod06.ol.epicgames.com # Syncs friend requests/chats.
+entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
 
-# GOG Galaxy
-# Used for syncing cloud saves and metadata for GOG titles.
-gog.com
-galaxy-client.gog.com
+# --- XBOX & MICROSOFT GAMING ---
+xbox.com                # Main Xbox portal and web profile.
+xboxlive.com            # Multiplayer servers, Party Chat, and Gamertags.
+vortex.data.microsoft.com # Primary server for achievement "pops" and tracking.
+v10.events.data.microsoft.com # Secondary telemetry for system achievements.
+v20.events.data.microsoft.com # High-priority Windows Gaming event syncing.
+msgamestudios.com       # Identity verification for Microsoft-owned games.
 
-# Battle.net (Blizzard)
-# Required for login, game updates, and achievement/telemetry tracking.
-battle.net
-account.battle.net
-oauth.battle.net
-telemetry-in.battle.net
+# --- EA APP (Electronic Arts) ---
+ea.com                  # Main website and authentication server.
+sdk.split.io            # Critical: If blocked, the Library view often disappears.
+telemetry.ea.com        # Required for "Time Played" and Achievement tracking.
+eacomms.ea.com          # EA social systems and in-app messaging.
 
-# EA App
-# sdk.split.io is a common "block" that actually breaks the EA library.
-ea.com
-sdk.split.io
-telemetry.ea.com
+# --- UBISOFT CONNECT ---
+ubisoft.com             # Main account and store server.
+ubi.com                 # Legacy login and platform authentication.
+ubisoft-connect.ubi.com # Ubisoft Connect launcher synchronization.
+static-ubiservices.ubi.com # Core challenges, rewards, and XP tracking.
+social.cdn.ubisoft.com  # Downloads friend avatars and social list data.
+overlay.ubisoft.com     # Enables the in-game social menu and messages.
+avatars.ubisoft.com     # Handles user profile pictures across games.
 
-# Ubisoft Connect
-# Required for challenges, rewards, and syncing saves.
-ubi.com
-ubisoft.com
-static-ubiservices.ubi.com
-ubisoft-connect.ubi.com
+# --- BLIZZARD (Battle.net) ---
+battle.net              # Main launcher login and store.
+blizzard.com            # Account management and website features.
+telemetry-in.battle.net # Achievement syncing and playtime tracking.
+oauth.battle.net        # Secure login verification for launcher/games.
+blzstatic.com           # High-speed delivery for store images and icons.
 
-# Rockstar Games
-# Essential for Social Club achievements and launching GTA/Red Dead.
-rockstargames.com
-socialclub.rockstargames.com
+# --- ROCKSTAR GAMES ---
+rockstargames.com       # Main website and Social Club login.
+socialclub.rockstargames.com # Syncs Rockstar Achievements and GTA/RDR data.
 
+# --- DISCORD ---
+gateway.discord.gg      # Primary connection for Discord client to stay online.
+cdn.discordapp.com      # Required for loading chat images, icons, and files.
 
-# --- CONSOLE SERVICES ---
+# --- CONSOLE EXTRAS ---
+playstation.net         # PSN Trophy syncing and Remote Play login.
+sonyentertainmentnetwork.com # PlayStation account authentication.
+nintendo.net            # Nintendo Switch Online multiplayer and friend list.
+nintendowifi.net        # Legacy support for older Nintendo online titles.
 
-# Xbox & Microsoft Gaming
-# vortex/v10/v20 are the primary domains for achievement "pops."
-xbox.com
-xboxlive.com
-vortex.data.microsoft.com
-v10.events.data.microsoft.com
-v20.events.data.microsoft.com
-
-# PlayStation Network
-# Required for trophy syncing and account verification.
-playstation.net
-sonyentertainmentnetwork.com
-
-# Nintendo Switch Online
-# Required for eShop access and online play.
-nintendo.net
-nintendo.com
-nintendowifi.net
-
-
-# --- ENGINE & DEVELOPMENT UTILITIES ---
-
-# Unity Engine
-# Used by thousands of indie games for version checks and basic telemetry.
-unity3d.com
-config.unityads.unity3d.com
-
-# Unreal Engine
-# Required for assets and backend services in many modern games.
-unrealengine.com
-
-
-
-# --- Microsoft Store (Apps & Downloads) ---
-# Required to browse the store, check licenses, and download app data.
-displaycatalog.mp.microsoft.com
-purchase.mp.microsoft.com
-licensing.mp.microsoft.com
-store-images.s-microsoft.com
-
-# --- Windows Update & Delivery Optimization ---
-# These handle the actual "pulling" of files. "dl.delivery" is the big one.
-dl.delivery.mp.microsoft.com
-tlu.dl.delivery.mp.microsoft.com
-assets1.xboxlive.com.nsatc.net
-geo-prod.do.dsp.mp.microsoft.com
-
-# --- Connectivity & Account Sync ---
-# Windows uses these to check if you have internet and to sync your settings.
-www.msftncsi.com
-www.msftconnecttest.com
-clientconfig.passport.net
-login.live.com
+# --- SYSTEM & GAME ENGINES ---
+unity3d.com             # Basic version checking for thousands of indie games.
+config.unityads.unity3d.com # While called "ads," it often checks game settings.
+unrealengine.com        # Unreal Engine backend and Epic asset verification.
+dl.delivery.mp.microsoft.com # Windows Store game downloads/updates.
+licensing.mp.microsoft.com # Verifies license for Microsoft Store/Game Pass games.
