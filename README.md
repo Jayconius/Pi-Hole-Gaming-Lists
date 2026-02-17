@@ -45,5 +45,7 @@ Might need to whitelist googleads.g.doubleclick.net if Google Shopping links, re
 ### CurseForge: 
 Delete %AppData%\CurseForge\cache and restart application. 
 
+---
+
 ## ⚖️ Maintenance
 This repository is updated as new ad-servers are identified or when platforms change their telemetry endpoints. Feel free to monitor the commit history for changes.
