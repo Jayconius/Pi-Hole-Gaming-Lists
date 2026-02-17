@@ -1,0 +1,40 @@
+# --- Overwolf & Mod Managers (CurseForge / Thunderstore) ---
+# These block the sidebar/pop-up ads in the apps.
+mrkt.forgecdn.net
+content.overwolf.com
+ads.pubmatic.com
+overwolf-d.openx.net
+tracking.overwolf.com
+analyticsnew.overwolf.com
+ssbsync.smartadserver.com
+
+# --- Nexus Mods (Vortex) Web Ads & Tracking ---
+# Blocks the third-party ad networks used on the site.
+nexusmods.com.moatads.com
+ib.adnxs.com
+ads.pubmatic.com
+
+# --- General Game Telemetry & Spyware ---
+# "Redshell" is a common tracker used to monitor players.
+api.redshell.io
+inbox.redshell.io
+# "Unity Analytics" - safe to block ads, usually doesn't break game logic.
+data.unity_ads.com
+stats.unity3d.com
+
+# --- Launcher Annoyances (Banners & Shop Promos) ---
+# Ubisoft Connect Shop/Ads
+uplay-shop.ubi.com
+tracking-sdk.ubi.com
+# EA App Store/Ads
+adservice.ea.com
+# Nvidia GeForce Experience Telemetry
+telemetry.nvidia.com
+events.gfe.nvidia.com
+
+# --- In-Game Ad Networks (Mobile & Some PC) ---
+# These are the heavy hitters for serving video/banner ads.
+doubleclick.net
+googleadservices.com
+adnxs.com
+ad-delivery.net

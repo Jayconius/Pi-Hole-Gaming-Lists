@@ -1,0 +1,102 @@
+# --- ESSENTIAL GAMING DOMAINS - LAUNCHERS & STORES ---
+
+# Steam
+# Essential for login, friend lists, and achievement syncing.
+steampowered.com
+steamcommunity.com
+steam-chat.com
+steam-static.com
+
+# Epic Games
+# Required for game authentication, cloud saves, and achievement progress.
+epicgames.com
+tracking.epicgames.com
+metrics.ol.epicgames.com
+entitlement-public-service-prod08.ol.epicgames.com
+
+# GOG Galaxy
+# Used for syncing cloud saves and metadata for GOG titles.
+gog.com
+galaxy-client.gog.com
+
+# Battle.net (Blizzard)
+# Required for login, game updates, and achievement/telemetry tracking.
+battle.net
+account.battle.net
+oauth.battle.net
+telemetry-in.battle.net
+
+# EA App
+# sdk.split.io is a common "block" that actually breaks the EA library.
+ea.com
+sdk.split.io
+telemetry.ea.com
+
+# Ubisoft Connect
+# Required for challenges, rewards, and syncing saves.
+ubi.com
+ubisoft.com
+static-ubiservices.ubi.com
+ubisoft-connect.ubi.com
+
+# Rockstar Games
+# Essential for Social Club achievements and launching GTA/Red Dead.
+rockstargames.com
+socialclub.rockstargames.com
+
+
+# --- CONSOLE SERVICES ---
+
+# Xbox & Microsoft Gaming
+# vortex/v10/v20 are the primary domains for achievement "pops."
+xbox.com
+xboxlive.com
+vortex.data.microsoft.com
+v10.events.data.microsoft.com
+v20.events.data.microsoft.com
+
+# PlayStation Network
+# Required for trophy syncing and account verification.
+playstation.net
+sonyentertainmentnetwork.com
+
+# Nintendo Switch Online
+# Required for eShop access and online play.
+nintendo.net
+nintendo.com
+nintendowifi.net
+
+
+# --- ENGINE & DEVELOPMENT UTILITIES ---
+
+# Unity Engine
+# Used by thousands of indie games for version checks and basic telemetry.
+unity3d.com
+config.unityads.unity3d.com
+
+# Unreal Engine
+# Required for assets and backend services in many modern games.
+unrealengine.com
+
+
+
+# --- Microsoft Store (Apps & Downloads) ---
+# Required to browse the store, check licenses, and download app data.
+displaycatalog.mp.microsoft.com
+purchase.mp.microsoft.com
+licensing.mp.microsoft.com
+store-images.s-microsoft.com
+
+# --- Windows Update & Delivery Optimization ---
+# These handle the actual "pulling" of files. "dl.delivery" is the big one.
+dl.delivery.mp.microsoft.com
+tlu.dl.delivery.mp.microsoft.com
+assets1.xboxlive.com.nsatc.net
+geo-prod.do.dsp.mp.microsoft.com
+
+# --- Connectivity & Account Sync ---
+# Windows uses these to check if you have internet and to sync your settings.
+www.msftncsi.com
+www.msftconnecttest.com
+clientconfig.passport.net
+login.live.com
