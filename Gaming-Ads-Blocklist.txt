@@ -1,5 +1,5 @@
 # ==========================================================
-#         GAMING ADS & TELEMETRY BLOCKLIST - 2026
+#         GAMING ADS & TELEMETRY BLOCKLIST - Feb 2026
 # ==========================================================
 
 # --- Overwolf & CurseForge Ad Delivery ---
@@ -41,3 +41,4 @@ googleadservices.com
 adnxs.com
 ad-delivery.net
 criteo.com
+
