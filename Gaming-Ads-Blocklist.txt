@@ -1,40 +1,43 @@
-# --- Overwolf & Mod Managers (CurseForge / Thunderstore) ---
-# These block the sidebar/pop-up ads in the apps.
-mrkt.forgecdn.net
-content.overwolf.com
-ads.pubmatic.com
-overwolf-d.openx.net
+# ==========================================================
+#         GAMING ADS & TELEMETRY BLOCKLIST - 2026
+# ==========================================================
+
+# --- Overwolf & CurseForge Ad Delivery ---
+# These are pure ad-tech domains. Blocking these stops the banners 
+# without breaking mod downloads or app functionality.
+overwolf.rtb.admatic.de    # Real-time bidding (The "Ad Auction")
+ads.yieldmo.com            # Third-party ad network partner
+viralize-d.openx.net       # Video ad delivery network
+csync.smartadserver.com    # Syncs tracking data between ad companies
+audienceexposure.com       # Analytics used to verify ad "views"
+mrkt.forgecdn.net          # Primary CurseForge ad-delivery
+ads.pubmatic.com           # Overwolf third-party ad partner
+overwolf-d.openx.net       # Ad exchange for Overwolf apps
+
+# --- Overwolf & Launcher Telemetry ---
+# Stops the app from sending "usage data" back to the developers.
 tracking.overwolf.com
 analyticsnew.overwolf.com
-ssbsync.smartadserver.com
+analytics.overwolf.com
+telemetry.nvidia.com       # Nvidia GeForce Experience tracking
+tracking-sdk.ubi.com       # Ubisoft Connect tracking
 
-# --- Nexus Mods (Vortex) Web Ads & Tracking ---
-# Blocks the third-party ad networks used on the site.
+# --- Nexus Mods (Vortex) Web Ads ---
+# Blocks the trackers that follow you from the website into the manager.
 nexusmods.com.moatads.com
 ib.adnxs.com
-ads.pubmatic.com
 
 # --- General Game Telemetry & Spyware ---
-# "Redshell" is a common tracker used to monitor players.
+# "Redshell" and Unity analytics are safe to block; they don't impact gameplay.
 api.redshell.io
 inbox.redshell.io
-# "Unity Analytics" - safe to block ads, usually doesn't break game logic.
 data.unity_ads.com
 stats.unity3d.com
 
-# --- Launcher Annoyances (Banners & Shop Promos) ---
-# Ubisoft Connect Shop/Ads
-uplay-shop.ubi.com
-tracking-sdk.ubi.com
-# EA App Store/Ads
-adservice.ea.com
-# Nvidia GeForce Experience Telemetry
-telemetry.nvidia.com
-events.gfe.nvidia.com
-
-# --- In-Game Ad Networks (Mobile & Some PC) ---
-# These are the heavy hitters for serving video/banner ads.
+# --- Global In-Game Ad Networks ---
+# The "Heavy Hitters" used for ads in free-to-play games and mobile apps.
 doubleclick.net
 googleadservices.com
 adnxs.com
 ad-delivery.net
+criteo.com
