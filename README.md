@@ -39,7 +39,7 @@ If your mobile shopping app shows an error, whitelist aax-eu.amazon-adsystem.com
 
 
 ### Google Shopping: 
-Might need to whitelist googleads.g.doubleclick.net if Google Shopping links, referrals and shopping images break.
+Might need to whitelist googleads.g.doubleclick.net if Google Shopping links, referrals and shopping images break. Might also break Ad incentive game rewards in mobile Apps, i,e watch an ad for a reward.
 
 
 ### CurseForge: 
