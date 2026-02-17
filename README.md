@@ -17,11 +17,11 @@ To use these lists, copy the **Raw URL** below and add it to your Pi-hole "Adlis
 
 ### 1. Gaming Ads Blocklist
 This list blocks banner ads and trackers in mod managers and launchers.
-- **URL:** `https://raw.githubusercontent.com/Jayconius/Pi-Hole-Gaming-Lists/refs/heads/main/Gaming%20Ads%20Blocklist.txt`
+- **URL:** `https://raw.githubusercontent.com/Jayconius/Pi-Hole-Gaming-Lists/main/Gaming-Ads-Blocklist.txt`
 
 ### 2. Gaming Whitelist
 This list contains essential domains that should be **allowed** to ensure achievements and cloud saves work.
-- **URL:** `https://raw.githubusercontent.com/Jayconius/Pi-Hole-Gaming-Lists/refs/heads/main/Gaming%20Whitelist.txt`
+- **URL:** `https://raw.githubusercontent.com/Jayconius/Pi-Hole-Gaming-Lists/main/Gaming-Whitelist.txt`
 
 ---
 
