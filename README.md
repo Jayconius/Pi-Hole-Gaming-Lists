@@ -37,7 +37,7 @@ This list contains essential domains that should be **allowed** to ensure achiev
 Amazon App Users: If your mobile shopping app shows an error, whitelist aax-eu.amazon-adsystem.com or aax-us.amazon-adsystem.com This domain kills ads in CurseForge but might be required for some "Sponsored" search results in the Amazon app.
 
 
-Google Shopping: Might need to whitelist googleads.g.doubleclick.net if Google Shopping links, referrals and break images.
+Google Shopping: Might need to whitelist googleads.g.doubleclick.net if Google Shopping links, referrals and shopping images break.
 
 ## ⚖️ Maintenance
 This repository is updated as new ad-servers are identified or when platforms change their telemetry endpoints. Feel free to monitor the commit history for changes.
