@@ -1,11 +1,11 @@
 # ==========================================================
-#         GAMING ADS & TELEMETRY BLOCKLIST - March 2026
+#      GAMING ADS, TELEMETRY & WEB HARDENING - March 2026
 # ==========================================================
 
 # --- Overwolf & CurseForge Ad Delivery ---
 overwolf.rtb.admatic.de    # Real-time bidding (The "Ad Auction")
 ads.yieldmo.com            # Third-party ad network partner
-viralize-d.openx.net        # Video ad delivery network
+viralize-d.openx.net       # Video ad delivery network
 csync.smartadserver.com    # Syncs tracking data between ad companies
 audienceexposure.com       # Analytics used to verify ad "views"
 mrkt.forgecdn.net          # Primary CurseForge ad-delivery
@@ -38,7 +38,7 @@ api.redshell.io            # RedShell (cross-game player tracking API)
 inbox.redshell.io          # Data collection endpoint for RedShell scripts
 data.unity_ads.com         # Unity-specific ad network telemetry
 stats.unity3d.com          # Hardware/usage stats sent from Unity-engine games
-config.unityads.unity3d.com # Fetches ad layouts and settings for mobile/F2P games
+config.unityads.unity3d.com # Fetches ad layouts and settings for games
 cdp.cloud.unity3d.com      # Modern "Customer Data Platform" for Unity telemetry
 crash.steampowered.com     # Automatic crash reporting for Steam (Safe to block)
 
@@ -52,7 +52,11 @@ ads.google.com             # Primary domain for loading Google Ads scripts
 googleads.g.doubleclick.net # Core ad-targeting highway for third-party sites
 partnerad.l.doubleclick.net # Ad-serving for Google’s third-party partners
 doubleclick.net            # Google’s primary cross-site ad-tech domain
+static.doubleclick.net     # Hosts static assets for popup and overlay ads
+googletagservices.com      # Essential for Google's "publisher" ad-loading
+googletagmanager.com       # Deployment tool for various tracking scripts
+www.google-analytics.com   # Used to track if ads/popups were engaged with
 adnxs.com                  # AppNexus global ad-delivery infrastructure
 ad-delivery.net            # Generic node used by multiple smaller ad networks
 criteo.com                 # Retargeting ads (the ones that follow you around)
-googletagmanager.com       # Deployment tool for various tracking scripts
+s.youtube.com              # Watch/Search history tracking (blocks profile building)
