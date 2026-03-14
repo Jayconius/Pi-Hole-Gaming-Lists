@@ -1,44 +1,58 @@
 # ==========================================================
-#         GAMING ADS & TELEMETRY BLOCKLIST - Feb 2026
+#         GAMING ADS & TELEMETRY BLOCKLIST - March 2026
 # ==========================================================
 
 # --- Overwolf & CurseForge Ad Delivery ---
-# These are pure ad-tech domains. Blocking these stops the banners 
-# without breaking mod downloads or app functionality.
 overwolf.rtb.admatic.de    # Real-time bidding (The "Ad Auction")
 ads.yieldmo.com            # Third-party ad network partner
-viralize-d.openx.net       # Video ad delivery network
+viralize-d.openx.net        # Video ad delivery network
 csync.smartadserver.com    # Syncs tracking data between ad companies
 audienceexposure.com       # Analytics used to verify ad "views"
 mrkt.forgecdn.net          # Primary CurseForge ad-delivery
 ads.pubmatic.com           # Overwolf third-party ad partner
 overwolf-d.openx.net       # Ad exchange for Overwolf apps
+ads.overwolf.com           # Direct ad-serving domain for internal apps
+edge.overwolf.com          # Content delivery (Caution: may break app store)
 
 # --- Overwolf & Launcher Telemetry ---
-# Stops the app from sending "usage data" back to the developers.
-tracking.overwolf.com
-analyticsnew.overwolf.com
-analytics.overwolf.com
-telemetry.nvidia.com       # Nvidia GeForce Experience tracking
-tracking-sdk.ubi.com       # Ubisoft Connect tracking
+tracking.overwolf.com      # Core usage tracking for the Overwolf overlay
+analyticsnew.overwolf.com  # Modern endpoint for detailed app usage data
+analytics.overwolf.com     # Legacy usage reporting for older apps
+telemetry.nvidia.com       # Monitors GPU performance and GFE usage
+gfe.nvidia.com             # GeForce Experience authentication and telemetry
+tracking-sdk.ubi.com       # Captures player behavior in Ubisoft Connect
+uplay-connect.ubi.com      # Ubisoft launcher login and usage data
+telemetry.ea.com           # Primary usage tracking for the EA App
+river.data.ea.com          # Real-time event logging for EA games/launcher
+tracking.epicgames.com     # Core usage tracking for the Epic Games Store
+datarouter.ol.epicgames.com # Telemetry "router" for Epic Games services
 
-# --- Nexus Mods (Vortex) Web Ads ---
-# Blocks the trackers that follow you from the website into the manager.
-nexusmods.com.moatads.com
-ib.adnxs.com
+# --- Nexus Mods (Vortex) Web Ads & Tracking ---
+nexusmods.com.moatads.com  # Verifies if ads are actually "seen" by a human
+ib.adnxs.com               # Major ad exchange used for targeted bidding
+pixel.nexusmods.com        # Tracking "pixel" for Vortex/Nexus web activity
+events.nexusmods.com       # Standardized event telemetry for the Vortex client
 
 # --- General Game Telemetry & Spyware ---
-# "Redshell" and Unity analytics are safe to block; they don't impact gameplay.
-api.redshell.io
-inbox.redshell.io
-data.unity_ads.com
-stats.unity3d.com
+api.redshell.io            # RedShell (cross-game player tracking API)
+inbox.redshell.io          # Data collection endpoint for RedShell scripts
+data.unity_ads.com         # Unity-specific ad network telemetry
+stats.unity3d.com          # Hardware/usage stats sent from Unity-engine games
+config.unityads.unity3d.com # Fetches ad layouts and settings for mobile/F2P games
+cdp.cloud.unity3d.com      # Modern "Customer Data Platform" for Unity telemetry
+crash.steampowered.com     # Automatic crash reporting for Steam (Safe to block)
 
-# --- Global In-Game Ad Networks ---
-# The "Heavy Hitters" used for ads in free-to-play games and mobile apps.
-doubleclick.net
-googleadservices.com
-adnxs.com
-ad-delivery.net
-criteo.com
-
+# --- Global In-Game & Web Ad Networks (Google & Partners) ---
+googleadservices.com       # Tracks "conversions" (clicks resulting in actions)
+www.googleadservices.com   # Redirect and tracking pixel node
+pagead2.googlesyndication.com # Serves the actual banners and "AdSense" boxes
+tpc.googlesyndication.com  # Delivers the "Creatives" (images/videos) of ads
+adservice.google.com       # Dynamic ad delivery for Google's own ecosystem
+ads.google.com             # Primary domain for loading Google Ads scripts
+googleads.g.doubleclick.net # Core ad-targeting highway for third-party sites
+partnerad.l.doubleclick.net # Ad-serving for Google’s third-party partners
+doubleclick.net            # Google’s primary cross-site ad-tech domain
+adnxs.com                  # AppNexus global ad-delivery infrastructure
+ad-delivery.net            # Generic node used by multiple smaller ad networks
+criteo.com                 # Retargeting ads (the ones that follow you around)
+googletagmanager.com       # Deployment tool for various tracking scripts
