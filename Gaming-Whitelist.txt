@@ -1,5 +1,5 @@
 # ==========================================================
-#         MASTER GAMING WHITELIST - Feb 2026 EDITION
+#          MASTER GAMING WHITELIST - March 2026
 # ==========================================================
 
 # --- STEAM (Valve) ---
@@ -11,20 +11,20 @@ steamcontent.com        # Critical for downloading game updates and workshop mod
 steamusercontent.com    # Cloud storage for screenshots and user-created files.
 
 # --- EPIC GAMES ---
-epicgames.com           # Main store and launcher authentication.
-tracking.epicgames.com  # Required for achievement pops and syncing progress.
+epicgames.com            # Main store and launcher authentication.
+tracking.epicgames.com   # Required for achievement pops and syncing progress.
 metrics.ol.epicgames.com # Cloud save synchronization and telemetry logs.
 friends.ol.epicgames.com # Core Friends list service and "Social Overlay."
 friends-public-service-prod06.ol.epicgames.com # Syncs friend requests/chats.
 entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
 
-# --- XBOX & MICROSOFT GAMING ---
+# --- XBOX & MICROSLOP GAMING ---
 xbox.com                # Main Xbox portal and web profile.
 xboxlive.com            # Multiplayer servers, Party Chat, and Gamertags.
-vortex.data.microsoft.com # Primary server for achievement "pops" and tracking.
-v10.events.data.microsoft.com # Secondary telemetry for system achievements.
-v20.events.data.microsoft.com # High-priority Windows Gaming event syncing.
-msgamestudios.com       # Identity verification for Microsoft-owned games.
+vortex.data.microslop.com # Primary server for achievement "pops" and tracking.
+v10.events.data.microslop.com # Secondary telemetry for system achievements.
+v20.events.data.microslop.com # High-priority Windows Gaming event syncing.
+msgamestudios.com       # Identity verification for Microslop-owned games.
 
 # --- EA APP (Electronic Arts) ---
 ea.com                  # Main website and authentication server.
@@ -48,8 +48,13 @@ telemetry-in.battle.net # Achievement syncing and playtime tracking.
 oauth.battle.net        # Secure login verification for launcher/games.
 blzstatic.com           # High-speed delivery for store images and icons.
 
+# --- GOG GALAXY (CD Projekt) ---
+gog.com                 # Storefront and game library access.
+galaxy-client.gog.com   # Core launcher synchronization and cloud saves.
+# metrics.gog.com       # [OPTIONAL] Block this if you don't care about stats.
+
 # --- ROCKSTAR GAMES ---
-rockstargames.com       # Main website and Social Club login.
+rockstargames.com        # Main website and Social Club login.
 socialclub.rockstargames.com # Syncs Rockstar Achievements and GTA/RDR data.
 
 # --- DISCORD ---
@@ -64,7 +69,7 @@ nintendowifi.net        # Legacy support for older Nintendo online titles.
 
 # --- SYSTEM & GAME ENGINES ---
 unity3d.com             # Basic version checking for thousands of indie games.
-config.unityads.unity3d.com # While called "ads," it often checks game settings.
+config.unityads.unity3d.com # Checks game settings and regional configurations.
 unrealengine.com        # Unreal Engine backend and Epic asset verification.
-dl.delivery.mp.microsoft.com # Windows Store game downloads/updates.
-licensing.mp.microsoft.com # Verifies license for Microsoft Store/Game Pass games.
+dl.delivery.mp.microslop.com # Windows Store game downloads/updates.
+licensing.mp.microslop.com # Verifies license for Microslop Store/Game Pass games.
