@@ -1,5 +1,5 @@
 # ==========================================================
-#          MASTER GAMING WHITELIST - March 2026
+#         MASTER GAMING WHITELIST - March 2026
 # ==========================================================
 
 # --- STEAM (Valve) ---
@@ -18,13 +18,19 @@ friends.ol.epicgames.com # Core Friends list service and "Social Overlay."
 friends-public-service-prod06.ol.epicgames.com # Syncs friend requests/chats.
 entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
 
-# --- XBOX & MICROSLOP GAMING ---
+# --- XBOX & MICROSOFT GAMING (CRITICAL FOR BEDROCK) ---
+microsoft.com           # Base domain for MSA login.
 xbox.com                # Main Xbox portal and web profile.
-xboxlive.com            # Multiplayer servers, Party Chat, and Gamertags.
-vortex.data.microslop.com # Primary server for achievement "pops" and tracking.
-v10.events.data.microslop.com # Secondary telemetry for system achievements.
-v20.events.data.microslop.com # High-priority Windows Gaming event syncing.
-msgamestudios.com       # Identity verification for Microslop-owned games.
+xboxlive.com            # Multiplayer, Party Chat, and Gamertags.
+playfabapi.com          # Required for Minecraft Marketplace and Bedrock servers.
+minecraft.net           # Skin servers and Java Edition authentication.
+auth.xboxlive.com       # Core handshake for Bedrock login.
+user.auth.xboxlive.com  # Specific user verification.
+xsts.auth.xboxlive.com  # Security token service (The "Login" gatekeeper).
+title.mgt.xboxlive.com  # Required for "Logging in to Microsoft Account" screen.
+vortex.data.microsoft.com # Primary server for achievement tracking.
+v10.events.data.microsoft.com # Secondary telemetry for system achievements.
+msgamestudios.com       # Identity verification for Microsoft-owned games.
 
 # --- EA APP (Electronic Arts) ---
 ea.com                  # Main website and authentication server.
@@ -51,7 +57,6 @@ blzstatic.com           # High-speed delivery for store images and icons.
 # --- GOG GALAXY (CD Projekt) ---
 gog.com                 # Storefront and game library access.
 galaxy-client.gog.com   # Core launcher synchronization and cloud saves.
-# metrics.gog.com       # [OPTIONAL] Block this if you don't care about stats.
 
 # --- ROCKSTAR GAMES ---
 rockstargames.com        # Main website and Social Club login.
@@ -60,6 +65,7 @@ socialclub.rockstargames.com # Syncs Rockstar Achievements and GTA/RDR data.
 # --- DISCORD ---
 gateway.discord.gg      # Primary connection for Discord client to stay online.
 cdn.discordapp.com      # Required for loading chat images, icons, and files.
+discord.com             # Main site and API access.
 
 # --- CONSOLE EXTRAS ---
 playstation.net         # PSN Trophy syncing and Remote Play login.
@@ -71,5 +77,5 @@ nintendowifi.net        # Legacy support for older Nintendo online titles.
 unity3d.com             # Basic version checking for thousands of indie games.
 config.unityads.unity3d.com # Checks game settings and regional configurations.
 unrealengine.com        # Unreal Engine backend and Epic asset verification.
-dl.delivery.mp.microslop.com # Windows Store game downloads/updates.
-licensing.mp.microslop.com # Verifies license for Microslop Store/Game Pass games.
+dl.delivery.mp.microsoft.com # Windows Store game downloads/updates.
+licensing.mp.microsoft.com # Verifies license for Microsoft Store/Game Pass games.
