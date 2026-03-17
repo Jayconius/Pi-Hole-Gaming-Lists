@@ -18,18 +18,22 @@ friends.ol.epicgames.com # Core Friends list service and "Social Overlay."
 friends-public-service-prod06.ol.epicgames.com # Syncs friend requests/chats.
 entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
 
-# --- XBOX & MICROSOFT GAMING (CRITICAL FOR BEDROCK) ---
+# --- XBOX & MICROSOFT GAMING (FULL AUTH STACK) ---
 microsoft.com           # Base domain for MSA login.
+login.live.com          # Primary Microsoft account login portal.
+login.microsoftonline.com # Azure/Office/Xbox secondary login backend.
 xbox.com                # Main Xbox portal and web profile.
 xboxlive.com            # Multiplayer, Party Chat, and Gamertags.
-playfabapi.com          # Required for Minecraft Marketplace and Bedrock servers.
-minecraft.net           # Skin servers and Java Edition authentication.
 auth.xboxlive.com       # Core handshake for Bedrock login.
 user.auth.xboxlive.com  # Specific user verification.
 xsts.auth.xboxlive.com  # Security token service (The "Login" gatekeeper).
+device.auth.xboxlive.com # Hardware-level authentication for PC/Console.
+clientconfig.passport.net # Legacy/Device-based authentication handshake.
 title.mgt.xboxlive.com  # Required for "Logging in to Microsoft Account" screen.
+playfabapi.com          # Required for Minecraft Marketplace and Bedrock servers.
+minecraft.net           # Skin servers and Java Edition authentication.
 vortex.data.microsoft.com # Primary server for achievement tracking.
-v10.events.data.microsoft.com # Secondary telemetry for system achievements.
+v10.events.data.microsoft.com # Microsoft Telemetry (Required for some logins).
 msgamestudios.com       # Identity verification for Microsoft-owned games.
 
 # --- EA APP (Electronic Arts) ---
