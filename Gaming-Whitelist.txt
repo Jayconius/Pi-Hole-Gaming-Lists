@@ -1,5 +1,5 @@
 # ==========================================================
-#         MASTER GAMING WHITELIST - March 2026
+#          MASTER GAMING WHITELIST - March 2026
 # ==========================================================
 
 # --- STEAM (Valve) ---
@@ -28,12 +28,16 @@ auth.xboxlive.com       # Core handshake for Bedrock login.
 user.auth.xboxlive.com  # Specific user verification.
 xsts.auth.xboxlive.com  # Security token service (The "Login" gatekeeper).
 device.auth.xboxlive.com # Hardware-level authentication for PC/Console.
+attestation.xboxlive.com # Verifies device integrity for secure login.
 clientconfig.passport.net # Legacy/Device-based authentication handshake.
 title.mgt.xboxlive.com  # Required for "Logging in to Microsoft Account" screen.
 playfabapi.com          # Required for Minecraft Marketplace and Bedrock servers.
 minecraft.net           # Skin servers and Java Edition authentication.
+me-identity.minecraft-services.net # Modern Bedrock identity handshake.
+multiplayer.minecraft.net # Core connectivity for featured servers.
 vortex.data.microsoft.com # Primary server for achievement tracking.
 v10.events.data.microsoft.com # Microsoft Telemetry (Required for some logins).
+v20.events.data.microsoft.com # High-priority Windows Gaming event syncing.
 msgamestudios.com       # Identity verification for Microsoft-owned games.
 
 # --- EA APP (Electronic Arts) ---
