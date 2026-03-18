@@ -1,102 +1,133 @@
 # ==========================================================
-#         MASTER GAMING WHITELIST - March 2026
+#          MASTER GAMING WHITELIST - March 2026
 # ==========================================================
 
 # --- ROBLOX ---
-roblox.com               # Main website, login, and game launching.
-www.roblox.com           # Core web portal.
-api.roblox.com           # Essential for profile data and friend lists.
-clientsettings.api.roblox.com # Critical for game client configurations.
-assetgame.roblox.com     # Loads game maps, scripts, and player assets.
-setup.rbxcdn.com         # Essential for game updates and installation.
-rbxcdn.com               # Content Delivery Network for all in-game images/textures.
-rbxinfra.net             # Backend infrastructure and server connectivity.
-rbxtrk.com               # Telemetry and tracking (Often required for session stability).
-arkoselabs.com           # Required for login CAPTCHAs and bot protection.
-captcha.roblox.com       # Secondary verification for account security.
+roblox.com                     # Main website, login, and game launching.
+www.roblox.com                 # Core web portal.
+api.roblox.com                 # Essential for profile data and friend lists.
+friends.roblox.com             # Handshake for social features.
+presence.roblox.com            # Shows online/in-game status.
+users.roblox.com               # Profile and ID verification.
+accountsettings.roblox.com     # User configuration.
+clientsettings.api.roblox.com  # Critical for game client configurations.
+clientsettingscdn.roblox.com   # CDN for client-side settings.
+assetgame.roblox.com           # Loads game maps, scripts, and player assets.
+assetdelivery.roblox.com       # Secondary asset delivery endpoint.
+setup.rbxcdn.com               # Essential for game updates and installation.
+rbxcdn.com                     # CDN for all in-game images/textures.
+fts.rbxcdn.com                 # Game file transfer services.
+tr.rbxcdn.com                  # Asset tracking services.
+rbxinfra.net                   # Backend infrastructure and server connectivity.
+rbxtrk.com                     # Telemetry and tracking (Required for session stability).
+arkoselabs.com                 # Required for login CAPTCHAs and bot protection.
+captcha.roblox.com             # Secondary verification for account security.
+apis.roblox.com                # Modern unified API (Fixes many join errors).
+games.roblox.com               # Core game instance connectivity.
+voice.roblox.com               # Required for spatial voice chat.
+realtime-signalr.roblox.com    # Live updates and game state sync.
+thumbnails.roblox.com          # Loading game and avatar icons.
+avatar.roblox.com              # Character appearance data.
+catalog.roblox.com             # Marketplace access.
+economy.roblox.com             # Robux and transaction handling.
+notifications.roblox.com       # Real-time alert system.
+privatemessages.roblox.com     # In-app messaging.
+usermoderation.roblox.com      # Required for safety checks.
+ephemeralcounters.api.roblox.com # Analytics and session counters.
+client-telemetry.roblox.com    # Connection health reporting.
+ecsv2.roblox.com               # Event logging and status updates.
+metrics.roblox.com             # Performance tracking.
+tracing.roblox.com             # Internal routing/debug logs.
+locale.roblox.com              # Language and regional settings.
 
 # --- STEAM (Valve) ---
-steampowered.com         # Main store, login, and account management.
-steamcommunity.com       # Steam Overlay, Profiles, Trading, and Market.
-steam-chat.com           # Friends list backend and real-time chat messages.
-steam-static.com         # Static assets like images and CSS for the launcher.
-steamcontent.com         # Critical for downloading game updates and workshop mods.
-steamusercontent.com     # Cloud storage for screenshots and user-created files.
+steampowered.com               # Main store, login, and account management.
+steamcommunity.com             # Steam Overlay, Profiles, Trading, and Market.
+steam-chat.com                 # Friends list backend and real-time chat messages.
+steam-static.com               # Static assets like images and CSS for the launcher.
+steamcontent.com               # Critical for downloading game updates and workshop mods.
+steamusercontent.com           # Cloud storage for screenshots and user-created files.
 
 # --- EPIC GAMES ---
-epicgames.com            # Main store and launcher authentication.
-tracking.epicgames.com   # Required for achievement pops and syncing progress.
-metrics.ol.epicgames.com # Cloud save synchronization and telemetry logs.
-friends.ol.epicgames.com # Core Friends list service and "Social Overlay."
+epicgames.com                  # Main store and launcher authentication.
+tracking.epicgames.com         # Required for achievement pops and syncing progress.
+metrics.ol.epicgames.com       # Cloud save synchronization and telemetry logs.
+friends.ol.epicgames.com       # Core Friends list service and "Social Overlay."
 friends-public-service-prod06.ol.epicgames.com # Syncs friend requests/chats.
 entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
 
-# --- XBOX & MICROSOFT GAMING (FULL AUTH STACK) ---
-microsoft.com            # Base domain for MSA login.
-login.live.com           # Primary Microsoft account login portal.
-login.microsoftonline.com # Azure/Office/Xbox secondary login backend.
-xbox.com                 # Main Xbox portal and web profile.
-xboxlive.com             # Multiplayer, Party Chat, and Gamertags.
-auth.xboxlive.com        # Core handshake for Bedrock login.
-user.auth.xboxlive.com   # Specific user verification.
-xsts.auth.xboxlive.com   # Security token service (The "Login" gatekeeper).
-device.auth.xboxlive.com # Hardware-level authentication for PC/Console.
-attestation.xboxlive.com # Verifies device integrity for secure login.
-clientconfig.passport.net # Legacy/Device-based authentication handshake.
-title.mgt.xboxlive.com   # Required for "Logging in to Microsoft Account" screen.
-playfabapi.com           # Required for Minecraft Marketplace and Bedrock servers.
-minecraft.net            # Skin servers and Java Edition authentication.
+# --- XBOX & MICROSOFT GAMING ---
+microsoft.com                  # Base domain for MSA login.
+login.live.com                 # Primary Microsoft account login portal.
+login.microsoftonline.com      # Azure/Office/Xbox secondary login backend.
+xbox.com                       # Main Xbox portal and web profile.
+xboxlive.com                   # Multiplayer, Party Chat, and Gamertags.
+auth.xboxlive.com              # Core handshake for Bedrock login.
+user.auth.xboxlive.com         # Specific user verification.
+xsts.auth.xboxlive.com         # Security token service (The "Login" gatekeeper).
+device.auth.xboxlive.com       # Hardware-level authentication for PC/Console.
+attestation.xboxlive.com       # Verifies device integrity for secure login.
+clientconfig.passport.net      # Legacy/Device-based authentication handshake.
+title.mgt.xboxlive.com         # Required for "Logging in to Microsoft Account" screen.
+playfabapi.com                 # Required for Minecraft Marketplace and Bedrock servers.
+msgamestudios.com              # Identity verification for Microsoft-owned games.
+vortex.data.microsoft.com      # Primary server for achievement tracking.
+v10.events.data.microsoft.com  # Microsoft Telemetry (Required for some logins).
+v20.events.data.microsoft.com  # High-priority Windows Gaming event syncing.
+
+# --- MINECRAFT ---
+minecraft.net                  # Skin servers and Java Edition authentication.
 me-identity.minecraft-services.net # Modern Bedrock identity handshake.
-multiplayer.minecraft.net # Core connectivity for featured servers.
-vortex.data.microsoft.com # Primary server for achievement tracking.
-v10.events.data.microsoft.com # Microsoft Telemetry (Required for some logins).
-v20.events.data.microsoft.com # High-priority Windows Gaming event syncing.
-msgamestudios.com        # Identity verification for Microsoft-owned games.
+multiplayer.minecraft.net      # Core connectivity for featured servers.
+resources.download.minecraft.net # Essential game resources/assets.
+libraries.minecraft.net        # Code libraries and engine components.
+textures.minecraft.net         # Loading skins and textures.
+pc.realms.minecraft.net        # Connectivity for Minecraft Realms servers.
 
 # --- EA APP (Electronic Arts) ---
-ea.com                   # Main website and authentication server.
-sdk.split.io             # Critical: If blocked, the Library view often disappears.
-telemetry.ea.com         # Required for "Time Played" and Achievement tracking.
-eacomms.ea.com           # EA social systems and in-app messaging.
+ea.com                         # Main website and authentication server.
+sdk.split.io                   # Critical: If blocked, the Library view often disappears.
+telemetry.ea.com               # Required for "Time Played" and Achievement tracking.
+eacomms.ea.com                 # EA social systems and in-app messaging.
 
 # --- UBISOFT CONNECT ---
-ubisoft.com              # Main account and store server.
-ubi.com                  # Legacy login and platform authentication.
-ubisoft-connect.ubi.com  # Ubisoft Connect launcher synchronization.
-static-ubiservices.ubi.com # Core challenges, rewards, and XP tracking.
-social.cdn.ubisoft.com   # Downloads friend avatars and social list data.
-overlay.ubisoft.com      # Enables the in-game social menu and messages.
-avatars.ubisoft.com      # Handles user profile pictures across games.
+ubisoft.com                    # Main account and store server.
+ubi.com                        # Legacy login and platform authentication.
+ubisoft-connect.ubi.com        # Ubisoft Connect launcher synchronization.
+static-ubiservices.ubi.com     # Core challenges, rewards, and XP tracking.
+social.cdn.ubisoft.com         # Downloads friend avatars and social list data.
+overlay.ubisoft.com            # Enables the in-game social menu and messages.
+avatars.ubisoft.com            # Handles user profile pictures across games.
 
 # --- BLIZZARD (Battle.net) ---
-battle.net               # Main launcher login and store.
-blizzard.com             # Account management and website features.
-telemetry-in.battle.net  # Achievement syncing and playtime tracking.
-oauth.battle.net         # Secure login verification for launcher/games.
-blzstatic.com            # High-speed delivery for store images and icons.
+battle.net                     # Main launcher login and store.
+blizzard.com                   # Account management and website features.
+telemetry-in.battle.net        # Achievement syncing and playtime tracking.
+oauth.battle.net               # Secure login verification for launcher/games.
+blzstatic.com                  # High-speed delivery for store images and icons.
 
 # --- GOG GALAXY (CD Projekt) ---
-gog.com                  # Storefront and game library access.
-galaxy-client.gog.com    # Core launcher synchronization and cloud saves.
+gog.com                        # Storefront and game library access.
+galaxy-client.gog.com          # Core launcher synchronization and cloud saves.
 
 # --- ROCKSTAR GAMES ---
-rockstargames.com        # Main website and Social Club login.
-socialclub.rockstargames.com # Syncs Rockstar Achievements and GTA/RDR data.
+rockstargames.com              # Main website and Social Club login.
+socialclub.rockstargames.com   # Syncs Rockstar Achievements and GTA/RDR data.
 
 # --- DISCORD ---
-gateway.discord.gg       # Primary connection for Discord client to stay online.
-cdn.discordapp.com       # Required for loading chat images, icons, and files.
-discord.com              # Main site and API access.
+gateway.discord.gg             # Primary connection for Discord client to stay online.
+cdn.discordapp.com             # Required for loading chat images, icons, and files.
+discord.com                    # Main site and API access.
 
 # --- CONSOLE EXTRAS ---
-playstation.net          # PSN Trophy syncing and Remote Play login.
-sonyentertainmentnetwork.com # PlayStation account authentication.
-nintendo.net             # Nintendo Switch Online multiplayer and friend list.
-nintendowifi.net         # Legacy support for older Nintendo online titles.
+playstation.net                # PSN Trophy syncing and Remote Play login.
+sonyentertainmentnetwork.com   # PlayStation account authentication.
+nintendo.net                   # Nintendo Switch Online multiplayer and friend list.
+nintendowifi.net               # Legacy support for older Nintendo online titles.
 
 # --- SYSTEM & GAME ENGINES ---
-unity3d.com              # Basic version checking for thousands of indie games.
-config.unityads.unity3d.com # Checks game settings and regional configurations.
-unrealengine.com         # Unreal Engine backend and Epic asset verification.
-dl.delivery.mp.microsoft.com # Windows Store game downloads/updates.
-licensing.mp.microsoft.com # Verifies license for Microsoft Store/Game Pass games.
+unity3d.com                    # Basic version checking for thousands of indie games.
+config.unityads.unity3d.com    # Checks game settings and regional configurations.
+unrealengine.com               # Unreal Engine backend and Epic asset verification.
+dl.delivery.mp.microsoft.com   # Windows Store game downloads/updates.
+licensing.mp.microsoft.com     # Verifies license for Microsoft Store/Game Pass games.
