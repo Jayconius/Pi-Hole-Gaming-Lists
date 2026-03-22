@@ -47,6 +47,13 @@ steam-chat.com                 # Friends list backend and real-time chat message
 steam-static.com               # Static assets like images and CSS for the launcher.
 steamcontent.com               # Critical for downloading game updates and workshop mods.
 steamusercontent.com           # Cloud storage for screenshots and user-created files.
+api.steampowered.com           # Steamworks Web API - stats, achievements, and game data.
+steamgames.com                 # Secondary domain used by Steam Overlay in some titles.
+steamcdn-a.akamaihd.net        # Akamai CDN - profile pictures and achievement icons.
+steamcommunity-a.akamaihd.net  # Akamai CDN - Steam Community page assets.
+steamstore-a.akamaihd.net      # Akamai CDN - store page images and game artwork.
+steamuserimages-a.akamaihd.net # Akamai CDN - user screenshots and uploaded artwork.
+steampipe.akamaized.net        # Primary Steam game file pipeline CDN for downloads.
 
 # --- EPIC GAMES ---
 epicgames.com                  # Main store and launcher authentication.
@@ -126,9 +133,12 @@ fp.msedge.net                  # Required for Realms world upload functionality.
 
 # --- EA APP (Electronic Arts) ---
 ea.com                         # Main website and authentication server.
-sdk.split.io                   # Critical: If blocked, the Library view often disappears.
-telemetry.ea.com               # Required for "Time Played" and Achievement tracking.
+accounts.ea.com                # EA account portal - login and profile management.
+sdk.split.io                   # If blocked, the Library view often disappears.
+telemetry.ea.com               # Required for Time Played and Achievement tracking.
 eacomms.ea.com                 # EA social systems and in-app messaging.
+origin-a.akamaihd.net          # Akamai CDN - EA App installer and game patch delivery.
+eaassets-a.akamaihd.net        # Akamai CDN - in-app store art and game thumbnails.
 
 # --- UBISOFT CONNECT ---
 ubisoft.com                    # Main account and store server.
@@ -138,10 +148,15 @@ static-ubiservices.ubi.com     # Core challenges, rewards, and XP tracking.
 social.cdn.ubisoft.com         # Downloads friend avatars and social list data.
 overlay.ubisoft.com            # Enables the in-game social menu and messages.
 avatars.ubisoft.com            # Handles user profile pictures across games.
+cdn.ubisoft.com                # Root Ubisoft CDN - DLC thumbnails and patch delivery.
+ubisoftentertainment.com       # Secondary domain for regional account auth and in-game store calls.
 
 # --- BLIZZARD (Battle.net) ---
 battle.net                     # Main launcher login and store.
 blizzard.com                   # Account management and website features.
+us.battle.net                  # US regional login endpoint for game authentication.
+eu.battle.net                  # EU regional login endpoint for game authentication.
+cdn.blizzard.com               # CDN for game patches, launcher assets, and shop images.
 telemetry-in.battle.net        # Achievement syncing and playtime tracking.
 oauth.battle.net               # Secure login verification for launcher/games.
 blzstatic.com                  # High-speed delivery for store images and icons.
@@ -184,10 +199,16 @@ la.riotgames.com               # Latin America regional server endpoint.
 # --- GOG GALAXY (CD Projekt) ---
 gog.com                        # Storefront and game library access.
 galaxy-client.gog.com          # Core launcher synchronization and cloud saves.
+remote.gog.com                 # Cloud save sync - receives and pushes save files.
+gameplay.gog.com               # Achievements API backend.
+notifications.gog.com          # In-client achievement pop notifications and friend activity.
+cfg.gog.com                    # Client configuration service - if blocked, library shows blank.
 
 # --- ROCKSTAR GAMES ---
 rockstargames.com              # Main website and Social Club login.
 socialclub.rockstargames.com   # Syncs Rockstar Achievements and GTA/RDR data.
+scv2.rockstargames.com         # Social Club v2 API - stats, achievements, and leaderboards.
+prod.cloud.rockstargames.com   # Cloud save endpoint for GTA Online and RDR2 progress.
 
 # --- 2K LAUNCHER ---
 2k.com                         # 2K account login and launcher authentication.
@@ -272,6 +293,13 @@ bcat-topics-lp1.cdn.nintendo.net  # BCAT topic subscription list for news channe
 ctest.cdn.nintendo.net            # Internet connectivity test (used by Switch NAT check).
 # Nintendo Switch Parental Controls App
 app.lp1.five.nintendo.net         # Parental Controls companion app backend.
+# Nintendo Switch Online App & Rewards
+lp1.nso.nintendo.net           # Nintendo Switch Online app backend - missions and rewards.
+fw-api.lp1.nso.nintendo.net    # NSO firmware API for Switch Online membership features.
+# User Profiles
+lp1.sprofile.srv.nintendo.net  # Switch user profile and avatar sync service.
+# Error Reporting (some Pi-hole users find blocking this triggers connectivity warnings)
+receive-lp1.er.srv.nintendo.net # Error reporting endpoint.
 # Legacy Platforms
 nintendowifi.net               # Legacy WFC support for Wii/DS online titles.
 nintendo-europe.com            # EU-specific account and region content endpoints.
