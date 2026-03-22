@@ -23,6 +23,10 @@ This list blocks banner ads and trackers in mod managers and launchers.
 This list contains essential domains that should be **allowed** to ensure achievements and cloud saves work.
 - **URL:** `https://raw.githubusercontent.com/Jayconius/Pi-Hole-Gaming-Lists/main/Gaming-Whitelist.txt`
 
+### 3. Gaming Gacha Whitelist
+This list contains essential domains that should be **allowed** to ensure logins and mobile platforms work.
+- **URL:** `https://raw.githubusercontent.com/Jayconius/Pi-Hole-Gaming-Lists/main/Gaming-Gacha-Whitelist.txt`
+
 ---
 
 ## 🛠 Setup Instructions
