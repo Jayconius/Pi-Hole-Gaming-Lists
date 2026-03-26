@@ -13,6 +13,7 @@ telemetry.2k.com               # Achievement sync and session reporting for 2K t
 # --- ACTIVISION / CALL OF DUTY ---
 activision.com                 # Main Activision account portal and login.
 api.activision.com             # Activision account API for stats and friend data.
+arkoselabs.com                 # REQUIRED: Login verification and CAPTCHA for main site.
 callofduty.com                 # CoD website and companion app backend.
 client.callofduty.com          # In-game client connectivity and matchmaking.
 cod-game-service.prod.activision.com # Core CoD game service - stats, lobbies, ranks.
@@ -92,6 +93,7 @@ cfg.gog.com                    # Client configuration service - prevents blank l
 galaxy-client.gog.com          # Core launcher synchronization and cloud saves.
 gameplay.gog.com               # Achievements API backend.
 gog.com                        # Storefront and game library access.
+gog-statics.com                # ESSENTIAL: Primary host for web assets and promotional banners.
 images.gog-statics.com         # Modern CDN for game art and library thumbnails.
 login.gog.com                  # Dedicated authentication service for signing in.
 menu-static.gog-statics.com    # Navigation menu assets and icons.
@@ -109,6 +111,7 @@ me-identity.minecraft-services.net # Modern Bedrock identity handshake.
 minecraft.net                  # Skin servers and Java Edition authentication.
 minecraftprod.rtep.msgamestudios.com # Realms Plus world uploads to MS servers.
 minecraftservices.com          # Root domain for Bedrock services backend.
+mojang.com                     # ESSENTIAL: Legacy domain required for main website login assets.
 multiplayer.minecraft.net      # Core connectivity for featured servers.
 pc.realms.minecraft.net        # Connectivity for Minecraft Realms (Java).
 pocket.realms.minecraft.net    # Connectivity for Minecraft Realms (Bedrock).
@@ -140,8 +143,9 @@ fw-api.lp1.nso.nintendo.net     # NSO firmware API for membership features.
 lp1.npns.srv.nintendo.net      # NPNS root endpoint for Switch Online notifications.
 lp1.nso.nintendo.net           # Nintendo Switch Online app missions and rewards.
 lp1.sprofile.srv.nintendo.net  # Switch user profile and avatar sync service.
-nintendo-europe.com            # EU-specific account and region content endpoints.
+nintendo-europe.com            # ESSENTIAL: Required for UK/EU Nintendo site functionality.
 nintendo.com                   # Main Nintendo website, account login, and support.
+nintendo.net                   # ESSENTIAL: Assets and metadata for the Nintendo web eShop.
 nintendowifi.net               # Legacy WFC support for Wii/DS online titles.
 receive-lp1.er.srv.nintendo.net # Error reporting endpoint.
 sun.hac.lp1.d4c.nintendo.net   # System update metadata server.
@@ -195,7 +199,7 @@ metrics.roblox.com             # Performance tracking.
 notifications.roblox.com       # Real-time alert system.
 presence.roblox.com            # Shows online/in-game status.
 privatemessages.roblox.com     # In-app messaging.
-rbxcdn.com                     # CDN for all in-game images/textures.
+rbxcdn.com                     # ESSENTIAL: CDN for all in-game images, textures, and web layout assets.
 rbxinfra.net                   # Backend infrastructure and server connectivity.
 rbxtrk.com                     # Telemetry and tracking (Required for session stability).
 realtime-signalr.roblox.com    # Live updates and game state sync.
@@ -272,8 +276,10 @@ social.cdn.ubisoft.com         # Downloads friend avatars and social list data.
 static-ubiservices.ubi.com     # Core challenges, rewards, and XP tracking.
 ubi.com                        # Legacy login and platform authentication.
 ubisoft-connect.ubi.com        # Ubisoft Connect launcher synchronization.
+ubisoft-orbit.com              # ESSENTIAL: Connects the web interface to account services.
 ubisoft.com                    # Main account and store server.
 ubisoftentertainment.com       # Secondary domain for regional account auth and store calls.
+uplay.com                      # ESSENTIAL: Legacy domain required for web redirects and login modules.
 www.ubisoft.com                # Main web portal and account landing page.
 
 # --- XBOX & MICROSOFT GAMING ---
@@ -287,6 +293,7 @@ device.auth.xboxlive.com       # Hardware-level authentication for PC/Console.
 login.live.com                 # Primary Microsoft account login portal.
 login.microsoftonline.com      # Azure/Office/Xbox secondary login backend.
 microsoft.com                  # Base domain for MSA login.
+msedge.net                     # ESSENTIAL: Required for loading Microsoft/Xbox web resources and layout.
 msgamestudios.com              # Identity verification for Microsoft-owned games.
 playfabapi.com                 # Required for Minecraft Marketplace and Bedrock servers.
 title.auth.xboxlive.com        # Per-title authentication handshake for Xbox games.
@@ -295,6 +302,7 @@ user.auth.xboxlive.com         # Specific user verification.
 v10.events.data.microsoft.com  # Microsoft Telemetry (Required for some logins).
 v20.events.data.microsoft.com  # High-priority Windows Gaming event syncing.
 vortex.data.microsoft.com      # Primary server for achievement tracking.
+xboxab.com                     # ESSENTIAL: Asset bridge for Xbox.com (often blocked as tracking).
 xbox.com                       # Main Xbox portal and web profile.
 xboxlive.com                   # Multiplayer, Party Chat, and Gamertags.
 xsts.auth.xboxlive.com         # Security token service (The "Login" gatekeeper).
