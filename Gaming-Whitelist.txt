@@ -74,6 +74,8 @@ orderprocessor-public-service-ecomprod01.ol.epicgames.com # Purchase/transaction
 account-public-service-prod03.ol.epicgames.com    # Account service (login handshake).
 cdn1.unrealengine.com          # CDN for launcher assets and game content (1 of 2).
 cdn2.unrealengine.com          # CDN for launcher assets and game content (2 of 2).
+static-assets-prod.epicgames.com # Primary source for launcher UI and game thumbnails.
+epic-games-api-oss-production.s3.amazonaws.com # S3 bucket for library and game art.
 
 # --- XBOX & MICROSOFT GAMING ---
 microsoft.com                  # Base domain for MSA login.
