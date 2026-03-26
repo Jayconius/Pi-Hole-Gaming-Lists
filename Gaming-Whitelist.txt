@@ -76,6 +76,7 @@ cdn1.unrealengine.com          # CDN for launcher assets and game content (1 of 
 cdn2.unrealengine.com          # CDN for launcher assets and game content (2 of 2).
 static-assets-prod.epicgames.com # Primary source for launcher UI and game thumbnails.
 epic-games-api-oss-production.s3.amazonaws.com # S3 bucket for library and game art.
+cms-assets.production.epicgames.com # Storefront banners and promotional media.
 
 # --- XBOX & MICROSOFT GAMING ---
 microsoft.com                  # Base domain for MSA login.
@@ -200,11 +201,16 @@ la.riotgames.com               # Latin America regional server endpoint.
 
 # --- GOG GALAXY (CD Projekt) ---
 gog.com                        # Storefront and game library access.
+www.gog.com                    # Main website front-end.
+static.gog.com                 # ESSENTIAL: Loads CSS, JS, and all site images.
 galaxy-client.gog.com          # Core launcher synchronization and cloud saves.
 remote.gog.com                 # Cloud save sync - receives and pushes save files.
 gameplay.gog.com               # Achievements API backend.
-notifications.gog.com          # In-client achievement pop notifications and friend activity.
-cfg.gog.com                    # Client configuration service - if blocked, library shows blank.
+notifications.gog.com          # In-client achievement pop notifications.
+cfg.gog.com                    # Client configuration service.
+cdn.gog.com                    # Main CDN for game installers and large assets.
+images.gog-statics.com         # Modern CDN for high-res game art and thumbnails.
+login.gog.com                  # Dedicated authentication service.
 
 # --- ROCKSTAR GAMES ---
 rockstargames.com              # Main website and Social Club login.
