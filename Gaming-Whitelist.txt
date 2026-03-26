@@ -287,8 +287,12 @@ avatars.ubisoft.com            # Handles user profile pictures across games.
 cdn.ubisoft.com                # Root Ubisoft CDN - DLC thumbnails and patch delivery.
 connect.ubisoft.com            # Modern Ubisoft Connect web interface and login portal.
 social.cdn.ubisoft.com         # Downloads friend avatars and social list data.
+static-dm.ubisoft.com          # NEW: Hosts store banners and promotional modules.
 static-ubiservices.ubi.com     # Core challenges, rewards, and XP tracking.
+staticctf.ubisoft.com          # NEW: Web framework for login and account pages.
 ubi.com                        # Legacy login and platform authentication.
+ubiservices.cdn.ubi.com        # NEW: Delivers background services for the launcher.
+ubistatic-a.ubisoft.com        # NEW: Primary host for images, CSS, and site layout.
 ubisoft-connect.ubi.com        # Ubisoft Connect launcher synchronization.
 ubisoft-orbit.com              # ESSENTIAL: Connects the web interface to account services.
 ubisoft.com                    # Main account and store server.
