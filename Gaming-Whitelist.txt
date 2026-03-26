@@ -99,13 +99,15 @@ gameplay.gog.com               # Achievements API backend.
 gog-statics.com                # ESSENTIAL: Primary host for web assets and promotional banners.
 gog.com                        # Storefront and game library access.
 images.gog-statics.com         # Modern CDN for game art and library thumbnails.
-insights-collector.gog.com     # NEW: GOG telemetry and analytics data collection.
+images.gog.com                 # Secondary/Legacy CDN for game assets and store images.
+insights-collector.gog.com     # GOG telemetry and analytics data collection.
 login.gog.com                  # Dedicated authentication service for signing in.
 menu.gog.com                   # REQUIRED: Loads launcher navigation and menu items.
 notifications.gog.com          # In-client achievement pop notifications and activity.
 remote.gog.com                 # Cloud save sync - receives and pushes save files.
 sections.gog.com               # REQUIRED: Loads store and library sections within the client.
 static.gog.com                 # Core site CSS, JavaScript, and layout assets.
+users.gog.com                  # REQUIRED: User profiles, friends list, and social data.
 www.gog.com                    # Main website front-end.
 
 # --- MINECRAFT ---
