@@ -99,6 +99,7 @@ gameplay.gog.com               # Achievements API backend.
 gog-statics.com                # ESSENTIAL: Primary host for web assets and promotional banners.
 gog.com                        # Storefront and game library access.
 images.gog-statics.com         # Modern CDN for game art and library thumbnails.
+insights-collector.gog.com     # NEW: GOG telemetry and analytics data collection.
 login.gog.com                  # Dedicated authentication service for signing in.
 menu.gog.com                   # REQUIRED: Loads launcher navigation and menu items.
 notifications.gog.com          # In-client achievement pop notifications and activity.
