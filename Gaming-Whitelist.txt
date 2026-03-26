@@ -4,7 +4,7 @@
 
 # --- 2K LAUNCHER ---
 2k.com                         # 2K account login and launcher authentication.
-accounts.2k.com                # Account management for 2K games (NBA 2K, Borderlands).
+accounts.2k.com                # Account management for 2K games.
 cdn.2k.com                     # CDN for 2K launcher assets and game patches.
 launcher.2k.com                # 2K Launcher core service endpoint.
 shift.2k.com                   # SHiFT rewards service (Borderlands keys, cosmetics).
@@ -118,7 +118,7 @@ pc.realms.minecraft.net        # Connectivity for Minecraft Realms (Java).
 pocket.realms.minecraft.net    # Connectivity for Minecraft Realms (Bedrock).
 resources.download.minecraft.net # Essential game resources/assets.
 textures.minecraft.net         # Loading skins and textures.
-www.minecraft.net              # Primary web portal for Minecraft.
+www.minecraft.net              # Primary web portal for Minecraft and skin management.
 www.mojang.com                 # Legacy web access for Mojang accounts.
 
 # --- NINTENDO ---
