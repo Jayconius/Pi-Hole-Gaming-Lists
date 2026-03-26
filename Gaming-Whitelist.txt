@@ -4,251 +4,345 @@
 
 # --- 2K LAUNCHER ---
 2k.com                         # 2K account login and launcher authentication.
-www.2k.com                     # Web storefront and account portal.
-accounts.2k.com                # Account management for 2K games.
+accounts.2k.com                # Account management for 2K games (NBA 2K, Borderlands).
 cdn.2k.com                     # CDN for 2K launcher assets and game patches.
 launcher.2k.com                # 2K Launcher core service endpoint.
 shift.2k.com                   # SHiFT rewards service (Borderlands keys, cosmetics).
 telemetry.2k.com               # Achievement sync and session reporting for 2K titles.
+www.2k.com                     # Web storefront and account portal.
 
 # --- ACTIVISION / CALL OF DUTY ---
 activision.com                 # Main Activision account portal and login.
-www.activision.com             # Main web portal front-end.
 api.activision.com             # Activision account API for stats and friend data.
 arkoselabs.com                 # REQUIRED: Login verification and CAPTCHA for main site.
 callofduty.com                 # CoD website and companion app backend.
-www.callofduty.com             # Primary web interface for Call of Duty.
 client.callofduty.com          # In-game client connectivity and matchmaking.
 cod-game-service.prod.activision.com # Core CoD game service - stats, lobbies, ranks.
 cod-notification.prod.activision.com # Challenge and seasonal event notifications.
 codservices.net                # CDN for CoD game assets and patch delivery.
 prod-data-energon.infra-ext.activision.com # CoD online services connector.
 s.activision.com               # Activision SSO - primary sign-in service endpoint.
+www.activision.com             # Main web portal front-end.
+www.callofduty.com             # Primary web interface for Call of Duty.
 
 # --- BETHESDA / id SOFTWARE ---
 api.bethesda.net               # Backend API for account services and mod sync.
 bethesda.net                   # Bethesda account login, cloud saves, and mod library.
-www.bethesda.net               # Web portal for account and Mods.bethesda.net.
 cdnp.bethesda.net              # CDN for game mods, patches, and Bethesda.net assets.
 mods.bethesda.net              # In-game mod browser for Fallout 4, Skyrim, Starfield.
 slayerclub.bethesda.net        # DOOM Slayer Club - achievement challenges and rewards.
 telemetry.prod.bethesda.net    # Achievement sync and playtime reporting.
+www.bethesda.net               # Web portal for account and Mods.bethesda.net.
 
 # --- BLIZZARD (Battle.net) ---
 battle.net                     # Main launcher login and store.
-www.battle.net                 # Web storefront for Battle.net titles.
 blizzard.com                   # Account management and website features.
-www.blizzard.com               # Main Blizzard corporate and news site.
 blzstatic.com                  # High-speed delivery for store images and icons.
 cdn.blizzard.com               # CDN for game patches, launcher assets, and shop images.
 eu.battle.net                  # EU regional login endpoint for game authentication.
 oauth.battle.net               # Secure login verification for launcher/games.
 telemetry-in.battle.net        # Achievement syncing and playtime tracking.
 us.battle.net                  # US regional login endpoint for game authentication.
+www.battle.net                 # Web storefront for Battle.net titles.
+www.blizzard.com               # Main Blizzard corporate and news site.
 
 # --- DISCORD ---
 cdn.discordapp.com             # Required for loading chat images, icons, and files.
 discord.com                    # Main site and API access.
-www.discord.com                # Web-based Discord client and marketing site.
 gateway.discord.gg             # Primary connection for Discord client to stay online.
+www.discord.com                # Web-based Discord client and marketing site.
 
 # --- EA APP (Electronic Arts) ---
 accounts.ea.com                # EA account portal - login and profile management.
 ea.com                         # Main website and authentication server.
-www.ea.com                     # Main web portal and storefront front-end.
 eaassets-a.akamaihd.net        # Akamai CDN - in-app store art and game thumbnails.
 eacomms.ea.com                 # EA social systems and in-app messaging.
 gateway.ea.com                 # Core API gateway for EA App user interface modules.
 internal.pinnacle.ad.ea.com    # Critical UI endpoint - prevents "Empty Library" errors.
 origin-a.akamaihd.net          # Akamai CDN - EA App installer and game patch delivery.
 origin.com                     # Legacy store domain used for redirects and legacy auth.
-www.origin.com                 # Primary store front-end for EA titles.
 sdk.split.io                   # ESSENTIAL: Feature flagging service - prevents library view from disappearing.
 telemetry.ea.com               # Required for Time Played and Achievement tracking.
+www.ea.com                     # Main web portal and storefront front-end.
+www.origin.com                 # Primary store front-end for EA titles.
 
 # --- EPIC GAMES ---
-epicgames.com                  # Main store and launcher authentication.
-www.epicgames.com              # Web portal and store front-end.
-epicgames.dev                  # ESSENTIAL: Base domain for Epic Online Services (EOS).
-api.epicgames.dev              # ESSENTIAL: Matchmaking and achievement sync for EOS titles.
+account-public-service-prod03.ol.epicgames.com    # Account service (login handshake).
 accounts.epicgames.com         # Account login and profile management.
-catalog-public-service-prod06.ol.epicgames.com # Store catalog for browsing and purchasing.
-cdn1.unrealengine.com          # CDN for launcher assets and game content.
-cdn2.unrealengine.com          # CDN for launcher assets and game content.
+accounts.launcher-website-prod07.ol.epicgames.com # Account page within launcher.
+api.epicgames.dev              # ESSENTIAL: Matchmaking and achievement sync for EOS titles.
+catalog-public-service-prod06.ol.epicgames.com    # Store catalog for browsing and purchasing.
+cdn1.unrealengine.com          # CDN for launcher assets and game content (1 of 2).
+cdn2.unrealengine.com          # CDN for launcher assets and game content (2 of 2).
+datarouter.ol.epicgames.com    # Telemetry and data routing for the launcher.
 entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
+epic-games-api-oss-production.s3.amazonaws.com # S3 bucket for library and game art.
+epicgames.com                  # Main store and launcher authentication.
+epicgames.dev                  # ESSENTIAL: Base domain for Epic Online Services (EOS).
+friends-public-service-prod06.ol.epicgames.com    # Syncs friend requests/chats.
 friends.ol.epicgames.com        # Core Friends list service and "Social Overlay."
-launcher-public-service-prod06.ol.epicgames.com # Core launcher service endpoint.
+launcher-public-service-prod06.ol.epicgames.com   # Core launcher service endpoint.
+launcher-website-prod07.ol.epicgames.com          # Launcher website backend.
+launcherwaitingroom-public-service-prod06.ol.epicgames.com # Launcher queue/lobby.
 metrics.ol.epicgames.com       # Cloud save synchronization and telemetry logs.
+orderprocessor-public-service-ecomprod01.ol.epicgames.com # Purchase/transaction processing.
 static-assets-prod.epicgames.com # Primary source for launcher UI and game thumbnails.
 tracking.epicgames.com         # Required for achievement pops and syncing progress.
+www.epicgames.com              # Web portal and store front-end.
 
 # --- GOG GALAXY (CD Projekt) ---
 cdn.gog.com                    # Main CDN for game installers and large assets.
 cfg.gog.com                    # Client configuration service - prevents blank library.
 galaxy-client.gog.com          # Core launcher synchronization and cloud saves.
 gameplay.gog.com               # Achievements API backend.
-gog.com                        # Storefront and game library access.
-www.gog.com                    # Main website front-end.
 gog-statics.com                # ESSENTIAL: Primary host for web assets and promotional banners.
+gog.com                        # Storefront and game library access.
 images.gog-statics.com         # Modern CDN for game art and library thumbnails.
 login.gog.com                  # Dedicated authentication service for signing in.
+notifications.gog.com          # In-client achievement pop notifications and activity.
 remote.gog.com                 # Cloud save sync - receives and pushes save files.
 static.gog.com                 # Core site CSS, JavaScript, and layout assets.
+www.gog.com                    # Main website front-end.
 
 # --- MINECRAFT ---
-api.minecraftservices.com      # Bedrock auth, entitlement checks and Marketplace purchases.
+api.minecraftservices.com      # Bedrock auth, entitlement checks and Marketplace.
 fp.msedge.net                  # Required for Realms world upload functionality.
 libraries.minecraft.net        # Code libraries and engine components.
 me-identity.minecraft-services.net # Modern Bedrock identity handshake.
 minecraft.net                  # Skin servers and Java Edition authentication.
-www.minecraft.net              # Primary web portal for Minecraft and skin management.
+minecraftprod.rtep.msgamestudios.com # Realms Plus world uploads to MS servers.
 minecraftservices.com          # Root domain for Bedrock services backend.
-mojang.com                     # ESSENTIAL: Legacy domain required for main website login assets.
-www.mojang.com                 # Legacy web access for Mojang accounts.
+mojang.com                     # ESSENTIAL: Legacy domain required for login assets.
 multiplayer.minecraft.net      # Core connectivity for featured servers.
 pc.realms.minecraft.net        # Connectivity for Minecraft Realms (Java).
 pocket.realms.minecraft.net    # Connectivity for Minecraft Realms (Bedrock).
+resources.download.minecraft.net # Essential game resources/assets.
 textures.minecraft.net         # Loading skins and textures.
+www.minecraft.net              # Primary web portal for Minecraft.
+www.mojang.com                 # Legacy web access for Mojang accounts.
 
 # --- NINTENDO ---
 aauth-lp1.ndas.srv.nintendo.net # Application authentication - per-game online access.
-accounts.nintendo.com          # Nintendo Account portal - login and profile management.
+accounts.nintendo.com          # Nintendo Account portal - login and profile.
 api.accounts.nintendo.com      # Account API - add friends, profile data, avatars.
+app-a05.lp1.npns.srv.nintendo.net # NPNS app node - real-time alert delivery.
+app.lp1.five.nintendo.net      # Parental Controls companion app backend.
 atum.hac.lp1.d4c.nintendo.net  # Game download CDN - primary title delivery.
 bcat-data-lp1.cdn.nintendo.net # BCAT content payload delivery.
+bcat-list-lp1.cdn.nintendo.net # BCAT content topic list.
+bcat-topics-lp1.cdn.nintendo.net # BCAT topic subscription list.
 beach.hac.lp1.eshop.nintendo.net # eShop product listing and search.
+broker.lp1.npns.srv.nintendo.net # NPNS notification broker.
 bugyo.hac.lp1.eshop.nintendo.net # eShop primary storefront service.
 capi.lp1.op2.nintendo.net      # Online play core API - matchmaking and sessions.
-cdn.accounts.nintendo.com      # CDN for account assets (profile images, badges).
-ctest.cdn.nintendo.net         # Internet connectivity test (used by Switch NAT check).
-dauth-lp1.ndas.srv.nintendo.net # Device authentication - the hardware identity handshake.
-dragons.hac.lp1.dragons.nintendo.net # Nintendo Switch Online membership verification.
-ecs-lp1.hac.shop.nintendo.net  # eShop commerce server - purchases and receipts.
-lp1.nso.nintendo.net           # Nintendo Switch Online app missions and rewards.
-nintendo-europe.com            # ESSENTIAL: Required for UK/EU Nintendo site functionality.
-www.nintendo-europe.com        # EU regional web storefront.
-nintendo.com                   # Main Nintendo website, account login, and support.
-www.nintendo.com               # Primary US web portal for Nintendo.
-nintendo.net                   # ESSENTIAL: Assets and metadata for the Nintendo web eShop.
+cdn.accounts.nintendo.com      # CDN for account assets (profile images).
+consumer.lp1.npns.srv.nintendo.net # NPNS consumer - receives pushed notifications.
+ctest.cdn.nintendo.net         # Internet connectivity test (Switch NAT check).
+dauth-lp1.ndas.srv.nintendo.net # Device authentication hardware handshake.
+dragons.hac.lp1.dragons.nintendo.net # NSO membership verification.
+e0d67c509fb203858ebcb2fe3f88c2aa.baas.nintendo.com # BAAS online status.
+ecs-lp1.hac.shop.nintendo.net  # eShop commerce server.
+fw-api.lp1.nso.nintendo.net    # NSO firmware API membership features.
+lp1.npns.srv.nintendo.net      # NPNS root endpoint for notifications.
+lp1.nso.nintendo.net           # Nintendo Switch Online missions and rewards.
+lp1.sprofile.srv.nintendo.net  # Switch user profile and avatar sync.
+nintendo-europe.com            # ESSENTIAL: Required for UK/EU Nintendo site.
+nintendo.com                   # Main Nintendo website, login, and support.
+nintendo.net                   # ESSENTIAL: Assets and metadata for the web eShop.
 nintendowifi.net               # Legacy WFC support for Wii/DS online titles.
+receive-lp1.er.srv.nintendo.net # Error reporting endpoint.
+sun.hac.lp1.d4c.nintendo.net   # System update metadata server.
+tagaya.hac.lp1.eshop.nintendo.net # eShop title version list and update metadata.
+veer.hac.lp1.d4c.nintendo.net  # Secondary game content delivery node.
+www.nintendo-europe.com        # EU regional web storefront.
+www.nintendo.com               # Primary US web portal for Nintendo.
 
 # --- PARADOX LAUNCHER ---
 accounts.paradoxplaza.com      # Account authentication service.
 api.paradoxplaza.com           # Launcher backend API (mods, DLC, cloud saves).
-cdn.paradoxplaza.com           # CDN for launcher assets, news feed, and DLC artwork.
-mods.paradoxplaza.com          # Paradox mod platform (Cities, CK3, EU4 mods).
+cdn.paradoxplaza.com           # CDN for launcher assets and news.
+mods.paradoxplaza.com          # Paradox mod platform.
 paradoxplaza.com               # Paradox account portal, store, and launcher login.
+pdxmm.akamaized.net            # Akamai-hosted Paradox Mods CDN.
 www.paradoxplaza.com           # Web storefront and community forums.
 
 # --- RIOT GAMES ---
 auth.riotgames.com             # OAuth authentication gateway for all Riot titles.
-ddragon.leagueoflegends.com    # Data Dragon - champion icons, splash art, patch data.
-entitlements.auth.riotgames.com # Verifies game and cosmetic ownership (skin unlocks).
+ddragon.leagueoflegends.com    # Data Dragon champion icons and splash art.
+entitlements.auth.riotgames.com # Verifies game and cosmetic ownership.
+la.riotgames.com               # Latin America regional server endpoint.
 lol.secure.dyn.riotcdn.net     # LoL secure dynamic asset delivery.
-playerpreferences.riotgames.com # Stores and syncs in-game settings across sessions.
-pvp.net                        # Legacy League of Legends backend (still active for LAN).
-riotcdn.net                    # Primary Riot CDN for game assets, patches, thumbnails.
-riotgames.com                  # Main Riot account portal, login, and store.
-www.riotgames.com              # Web portal and game library site.
+playerpreferences.riotgames.com # Stores and syncs in-game settings.
+pvp.net                        # Legacy League backend (active for LAN).
+rgpub.io                       # Riot internal publish for live match data.
+riotcdn.com                    # Secondary Riot CDN (legacy/overflow).
+riotcdn.net                    # Primary Riot CDN.
+riotgames.com                  # Main Riot account portal and login.
+skins.riotgames.com            # Cosmetic/skin data delivery.
 store.riotgames.com            # Riot Store for VP/RP purchases.
+www.riotgames.com              # Web portal and game library site.
 
 # --- ROBLOX ---
+account-telemetry.roblox.com   # Connection health reporting.
+accountsettings.roblox.com     # User configuration.
 api.roblox.com                 # Essential for profile data and friend lists.
 apis.roblox.com                # Modern unified API (Fixes many join errors).
 arkoselabs.com                 # Required for login CAPTCHAs and bot protection.
+assetdelivery.roblox.com       # Secondary asset delivery endpoint.
 assetgame.roblox.com           # Loads game maps, scripts, and player assets.
 avatar.roblox.com              # Character appearance data.
+captcha.roblox.com             # Secondary verification for account security.
 catalog.roblox.com             # Marketplace access.
+client-telemetry.roblox.com    # Connection health reporting.
 clientsettings.api.roblox.com  # Critical for game client configurations.
+clientsettingscdn.roblox.com   # CDN for client-side settings.
+ecsv2.roblox.com               # Event logging and status updates.
 economy.roblox.com             # Robux and transaction handling.
+ephemeralcounters.api.roblox.com # Analytics and session counters.
 friends.roblox.com             # Handshake for social features.
+fts.rbxcdn.com                 # Game file transfer services.
 games.roblox.com               # Core game instance connectivity.
+locale.roblox.com              # Language and regional settings.
+metrics.roblox.com             # Performance tracking.
+notifications.roblox.com       # Real-time alert system.
 presence.roblox.com            # Shows online/in-game status.
-rbxcdn.com                     # ESSENTIAL: CDN for all in-game images, textures, and web layout assets.
+privatemessages.roblox.com     # In-app messaging.
+rbxcdn.com                     # ESSENTIAL: CDN for all in-game images and textures.
+rbxinfra.net                   # Backend infrastructure and server connectivity.
+rbxtrk.com                     # Telemetry and tracking (Session stability).
+realtime-signalr.roblox.com    # Live updates and game state sync.
 roblox.com                     # Main website, login, and game launching.
-www.roblox.com                 # Core web portal.
+setup.rbxcdn.com               # Essential for game updates and installation.
 thumbnails.roblox.com          # Loading game and avatar icons.
+tr.rbxcdn.com                  # Asset tracking services.
+tracing.roblox.com             # Internal routing/debug logs.
+usermoderation.roblox.com      # Required for safety checks.
+users.roblox.com               # Profile and ID verification.
 voice.roblox.com               # Required for spatial voice chat.
+www.roblox.com                 # Core web portal.
 
-# --- ROCKSTAR GAMES (Social Club) ---
-rockstargames.com              # Main website and Social Club login.
-www.rockstargames.com          # Primary web interface and store.
-socialclub.rockstargames.com   # ESSENTIAL: Syncs Rockstar Achievements and GTA/RDR data.
-prod.cloud.rockstargames.com   # Cloud save endpoint for GTA Online and RDR2 progress.
+# --- ROCKSTAR GAMES ---
 patches.rockstargames.com      # Required for launcher verification and updates.
-scv2.rockstargames.com         # Social Club v2 API - stats, achievements, and leaderboards.
+prod.cloud.rockstargames.com   # Cloud save endpoint for GTA Online and RDR2.
+rockstargames.com              # Main website and Social Club login.
+scv2.rockstargames.com         # Social Club v2 API - stats and leaderboards.
+socialclub.rockstargames.com   # ESSENTIAL: Syncs Rockstar Achievements and data.
+www.rockstargames.com          # Primary web interface and store.
 
-# --- SONY / PLAYSTATION (PS4 / PS5) ---
+# --- SONY / PLAYSTATION ---
 account.sonyentertainmentnetwork.com # Account management portal.
 api.playstation.com            # Core PSN API for console-side service calls.
-auth.api.sonyentertainmentnetwork.com # OAuth login API - the primary auth gateway.
-ca.account.sony.com            # SSO cookie endpoint (required for web sign-in flow).
+app.np.ac.playstation.com      # PlayStation App notification endpoint.
+auth.api.sonyentertainmentnetwork.com # OAuth login API primary gateway.
+ca.account.sony.com            # SSO cookie endpoint for web sign-in.
+fus01.ps3.update.playstation.net # Firmware update server (PS4/PS5).
+gamelist.api.playstation.com   # Game library and played-game tracking.
+gplaystation.com               # PlayStation Store content delivery CDN.
+id.sonyentertainmentnetwork.com # Identity/sign-in redirect endpoint.
+lp1.akamaized.net              # Akamai CDN node used for PSN.
+my.account.sony.com            # Modern Sony account hub.
+my.playstation.com             # User account dashboard and profile.
 playstation.com                # Main PlayStation website and store.
-www.playstation.com            # Primary web storefront.
-playstation.net                # PSN base domain - multiplayer, Remote Play, and NAT.
-social.playstation.com         # Friends list and party/messaging backend.
-store.playstation.com          # PlayStation Store (game purchases, DLC).
+playstation.net                # PSN base domain - multiplayer and NAT.
+social.playstation.com         # Friends list and party backend.
+sonyentertainmentnetwork.com   # Root Sony Entertainment Network domain.
+store.playstation.com          # PlayStation Store (purchases, DLC).
 trophy.api.playstation.com     # Trophy sync and leaderboard data.
+www.playstation.com            # Primary web storefront.
 
 # --- STEAM (Valve) ---
-api.steampowered.com           # Steamworks Web API - stats, achievements, and game data.
-checkout.steampowered.com      # Required for the shopping cart and checkout process.
+api.steampowered.com           # Steamworks Web API - stats, achievements.
+checkout.steampowered.com      # Required for the shopping cart and checkout.
 help.steampowered.com          # Steam support portal and refund requests.
-steampowered.com               # Main store, login, and account management.
-www.steampowered.com           # Main web portal front-end.
-steam-chat.com                 # Friends list backend and real-time chat messages.
+steam-chat.com                 # Friends list backend and real-time chat.
+steam-static.com               # Static assets like images and CSS.
+steamcdn-a.akamaihd.net        # Akamai CDN profile pictures and achievement icons.
+steamcommunity-a.akamaihd.net  # Akamai CDN Steam Community page assets.
 steamcommunity.com             # Steam Overlay, Profiles, Trading, and Market.
-steamcontent.com               # Critical for downloading game updates and workshop mods.
-steamstatic.com                # Static assets like images and CSS for the launcher.
-steamusercontent.com           # Cloud storage for screenshots and user-created files.
+steamcontent.com               # Critical for downloading game updates and mods.
+steampipe.akamaized.net        # Primary game file pipeline CDN for downloads.
+steampowered.com               # Main store, login, and account management.
+steamstore-a.akamaihd.net      # Akamai CDN store page images and artwork.
+steamuserimages-a.akamaihd.net # Akamai CDN user screenshots and artwork.
+steamusercontent.com           # Cloud storage for screenshots and user files.
+www.steampowered.com           # Main web portal front-end.
 
 # --- SYSTEM & GAME ENGINES ---
-config.unityads.unity3d.com    # Checks game settings and regional configurations.
-ctldl.windowsupdate.com        # Certificate Trust List - required for cert updates.
+config.unityads.unity3d.com    # Checks game settings and regional configs.
+ctldl.windowsupdate.com        # Certificate Trust List for Windows cert updates.
 dl.delivery.mp.microsoft.com   # Windows Store game downloads/updates.
-licensing.mp.microsoft.com     # Verifies license for Microsoft Store/Game Pass games.
-ocsp.digicert.com              # DigiCert OCSP - validates SSL certs for launchers.
-ocsp.pki.goog                  # Google OCSP - used by launchers with Google-issued certs.
-unity3d.com                    # Basic version checking for thousands of indie games.
-unrealengine.com               # Unreal Engine backend and Epic asset verification.
+licensing.mp.microsoft.com     # Verifies license for MS Store/Game Pass games.
+ocsp.digicert.com              # DigiCert OCSP validates SSL certs for launchers.
+ocsp.pki.goog                  # Google OCSP used by launchers.
+symbolserver.microsoft.com     # Microsoft symbol server crash reporting.
+unity3d.com                    # Basic version checking for indie games.
+unrealengine.com               # Unreal Engine backend and Epic verification.
 
 # --- UBISOFT CONNECT ---
-cms-cache.ubisoft.com          # NEW: Required for the launcher's banner news feed.
-static-news.ubisoft.com        # NEW: Hosts news assets and promotional banners.
-static3.cdn.ubi.com            # NEW: Key CDN for news layout and images.
-ubistatic2-a.ubisoft.com       # NEW: Redirect for news and achievement art.
 api-ubiservices.ubi.com        # Core login handshake.
 avatars.ubisoft.com            # User profile pictures.
 cdn.ubisoft.com                # DLC thumbnails and patch delivery.
+cms-cache.ubisoft.com          # Required for the launcher's banner news feed.
 connect.ubisoft.com            # Web login portal.
-social.cdn.ubisoft.com         # Friend list data.
+overlay.ubisoft.com            # Enables in-game social menu (Shift+F2).
+public-ubiservices.ubi.com     # ESSENTIAL: Core API for session tokens and DRM.
+social.cdn.ubisoft.com         # Friend avatars and social data.
 static-dm.ubisoft.com          # ESSENTIAL: Hosts store banners and modules.
+static-news.ubisoft.com        # Hosts news assets and promotional banners.
 static-ubiservices.ubi.com     # Challenges, rewards, and XP tracking.
+static3.cdn.ubi.com            # Key CDN for news layout and images.
 staticctf.ubisoft.com          # Web framework for login and account pages.
 ubi.com                        # Legacy login and platform authentication.
 ubiservices.cdn.ubi.com        # Delivers background services for the launcher.
-ubistatic-a.ubisoft.com        # Primary host for images and CSS.
 ubisoft-connect.ubi.com        # Launcher synchronization.
 ubisoft-orbit.com              # ESSENTIAL: Account service bridge.
 ubisoft.com                    # Main account and store server.
-www.ubisoft.com                # Main landing page.
-ubisoftentertainment.com       # Regional account auth.
+ubisoftentertainment.com       # Regional account auth and in-game store calls.
+ubistatic-a.ubisoft.com        # Primary host for images and CSS.
+ubistatic2-a.ubisoft.com       # Redirect for news and achievement art.
 uplay.com                      # ESSENTIAL: Legacy login modules.
+www.ubisoft.com                # Main landing page.
 
 # --- XBOX & MICROSOFT GAMING ---
-xbox.com                       # Main Xbox portal and web profile.
-www.xbox.com                   # Web storefront for Xbox.
-xboxlive.com                   # Multiplayer, Party Chat, and Gamertags.
+achievements.xboxlive.com      # Direct endpoint for Xbox achievement syncing.
+assets1.xboxlive.com           # Xbox console OS update asset delivery.
+attestation.xboxlive.com       # Verifies device integrity for secure login.
+auth.xboxlive.com              # Core handshake for Bedrock login.
+cert.mgt.xboxlive.com          # Certificate management for Xbox connections.
+clientconfig.passport.net      # Legacy/Device-based authentication handshake.
+def-vef.xboxlive.com           # Device enforcement and violation checking.
+device.auth.xboxlive.com       # Hardware-level authentication for PC/Console.
+displaycatalog.mp.microsoft.com # Game Pass library browsing and entitlement.
+eds.xboxlive.com               # Entertainment Discovery Service (metadata).
+g.live.com                     # Achievement upload and MS account sync.
+gamepass.com                   # Game Pass portal and subscription management.
+geo-prod.do.dsp.mp.microsoft.com # Geolocation routing for Game Pass delivery.
+help.ui.xboxlive.com           # In-shell help and support UI assets.
+licensing.xboxlive.com         # Game licence verification for Xbox titles.
 login.live.com                 # Primary Microsoft account login portal.
 login.microsoftonline.com      # Azure/Office/Xbox secondary login backend.
-user.auth.xboxlive.com         # Specific user verification for login.
-xsts.auth.xboxlive.com         # Security token service (The "Login" gatekeeper).
-achievements.xboxlive.com      # Direct endpoint for Xbox achievement syncing.
-v10.events.data.microsoft.com  # Microsoft Telemetry (Required for some logins).
-vortex.data.microsoft.com      # Achievement tracking and session sync.
-xboxab.com                     # Asset bridge for Xbox.com.
+microsoft.com                  # Base domain for MSA login.
 msedge.net                     # Microsoft/Xbox web resources and layout.
-gamepass.com                   # Game Pass subscription management.
-www.gamepass.com               # Marketing and login site for Game Pass.
+msftncsi.com                   # NCSI root domain.
+msgamestudios.com              # Identity verification for Microsoft-owned games.
+notify.xboxlive.com            # Real-time push notifications.
+playfabapi.com                 # Required for Minecraft Marketplace and Bedrock.
 settings-win.data.microsoft.com # Xbox App game installs and downloads.
+title.auth.xboxlive.com        # Per-title authentication handshake for Xbox.
+title.mgt.xboxlive.com         # Required for "Logging in" screen.
+user.auth.xboxlive.com         # Specific user verification for login.
+v10.events.data.microsoft.com  # Microsoft Telemetry (Required for some logins).
+v20.events.data.microsoft.com  # High-priority Windows Gaming event syncing.
+vortex.data.microsoft.com      # Achievement tracking and session sync.
 watson.telemetry.microsoft.com # Crash/error reporting.
+www.gamepass.com               # Marketing and login site for Game Pass.
+www.msftncsi.com               # MS Network Connectivity Status Indicator.
+www.xbox.com                   # Web storefront for Xbox.
+xbox.com                       # Main Xbox portal and web profile.
+xboxab.com                     # Asset bridge for Xbox.com.
+xboxexperiencesprod.experimentation.xboxlive.com # A/B testing.
+xflight.xboxlive.com           # Xbox Insider ring updates.
+xgpuweb.xboxlive.com           # Xbox Cloud Gaming (xCloud) web streaming.
+xgpuwebf2p.xboxlive.com        # xCloud free-to-play streaming variant.
+xboxlive.com                   # Multiplayer, Party Chat, and Gamertags.
+xsts.auth.xboxlive.com         # Security token service (The "Login" gatekeeper).
