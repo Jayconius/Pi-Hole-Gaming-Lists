@@ -91,6 +91,7 @@ tracking.epicgames.com         # Required for achievement pops and syncing progr
 www.epicgames.com              # Web portal and store front-end.
 
 # --- GOG GALAXY (CD Projekt) ---
+api.gog.com                    # REQUIRED: Core API for launcher and login functionality.
 cdn.gog.com                    # Main CDN for game installers and large assets.
 cfg.gog.com                    # Client configuration service - prevents blank library.
 galaxy-client.gog.com          # Core launcher synchronization and cloud saves.
@@ -99,8 +100,10 @@ gog-statics.com                # ESSENTIAL: Primary host for web assets and prom
 gog.com                        # Storefront and game library access.
 images.gog-statics.com         # Modern CDN for game art and library thumbnails.
 login.gog.com                  # Dedicated authentication service for signing in.
+menu.gog.com                   # REQUIRED: Loads launcher navigation and menu items.
 notifications.gog.com          # In-client achievement pop notifications and activity.
 remote.gog.com                 # Cloud save sync - receives and pushes save files.
+sections.gog.com               # REQUIRED: Loads store and library sections within the client.
 static.gog.com                 # Core site CSS, JavaScript, and layout assets.
 www.gog.com                    # Main website front-end.
 
