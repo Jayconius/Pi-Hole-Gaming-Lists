@@ -213,23 +213,27 @@ unity3d.com                    # Basic version checking for thousands of indie g
 unrealengine.com               # Unreal Engine backend and Epic asset verification.
 
 # --- UBISOFT CONNECT ---
-api-ubiservices.ubi.com        # Core login handshake - required for the login button to work.
-avatars.ubisoft.com            # Handles user profile pictures across games.
-cdn.ubisoft.com                # Root Ubisoft CDN - DLC thumbnails and patch delivery.
-connect.ubisoft.com            # Modern Ubisoft Connect web interface and login portal.
-social.cdn.ubisoft.com         # Downloads friend avatars and social list data.
-static-dm.ubisoft.com          # NEW: Hosts store banners and promotional modules.
-static-ubiservices.ubi.com     # Core challenges, rewards, and XP tracking.
-staticctf.ubisoft.com          # NEW: Web framework for login and account pages.
+cms-cache.ubisoft.com          # NEW: Required for the launcher's banner news feed.
+static-news.ubisoft.com        # NEW: Hosts news assets and promotional banners.
+static3.cdn.ubi.com            # NEW: Key CDN for news layout and images.
+ubistatic2-a.ubisoft.com       # NEW: Redirect for news and achievement art.
+api-ubiservices.ubi.com        # Core login handshake.
+avatars.ubisoft.com            # User profile pictures.
+cdn.ubisoft.com                # DLC thumbnails and patch delivery.
+connect.ubisoft.com            # Web login portal.
+social.cdn.ubisoft.com         # Friend list data.
+static-dm.ubisoft.com          # ESSENTIAL: Hosts store banners and modules.
+static-ubiservices.ubi.com     # Challenges, rewards, and XP tracking.
+staticctf.ubisoft.com          # Web framework for login and account pages.
 ubi.com                        # Legacy login and platform authentication.
-ubiservices.cdn.ubi.com        # NEW: Delivers background services for the launcher.
-ubistatic-a.ubisoft.com        # NEW: Primary host for images, CSS, and site layout.
-ubisoft-connect.ubi.com        # Ubisoft Connect launcher synchronization.
-ubisoft-orbit.com              # ESSENTIAL: Connects the web interface to account services.
+ubiservices.cdn.ubi.com        # Delivers background services for the launcher.
+ubistatic-a.ubisoft.com        # Primary host for images and CSS.
+ubisoft-connect.ubi.com        # Launcher synchronization.
+ubisoft-orbit.com              # ESSENTIAL: Account service bridge.
 ubisoft.com                    # Main account and store server.
-www.ubisoft.com                # Main web portal and account landing page.
-ubisoftentertainment.com       # Secondary domain for regional account auth and store calls.
-uplay.com                      # ESSENTIAL: Legacy domain required for web redirects and login modules.
+www.ubisoft.com                # Main landing page.
+ubisoftentertainment.com       # Regional account auth.
+uplay.com                      # ESSENTIAL: Legacy login modules.
 
 # --- XBOX & MICROSOFT GAMING ---
 xbox.com                       # Main Xbox portal and web profile.
@@ -239,12 +243,12 @@ login.live.com                 # Primary Microsoft account login portal.
 login.microsoftonline.com      # Azure/Office/Xbox secondary login backend.
 user.auth.xboxlive.com         # Specific user verification for login.
 xsts.auth.xboxlive.com         # Security token service (The "Login" gatekeeper).
-achievements.xboxlive.com      # ESSENTIAL: Direct endpoint for Xbox achievement syncing.
-v10.events.data.microsoft.com  # ESSENTIAL: Microsoft Telemetry (Required for some logins).
-vortex.data.microsoft.com      # Primary server for achievement tracking and session sync.
-xboxab.com                     # ESSENTIAL: Asset bridge for Xbox.com (often blocked as tracking).
-msedge.net                     # ESSENTIAL: Required for loading Microsoft/Xbox web resources and layout.
-gamepass.com                   # Game Pass portal and subscription management.
+achievements.xboxlive.com      # Direct endpoint for Xbox achievement syncing.
+v10.events.data.microsoft.com  # Microsoft Telemetry (Required for some logins).
+vortex.data.microsoft.com      # Achievement tracking and session sync.
+xboxab.com                     # Asset bridge for Xbox.com.
+msedge.net                     # Microsoft/Xbox web resources and layout.
+gamepass.com                   # Game Pass subscription management.
 www.gamepass.com               # Marketing and login site for Game Pass.
-settings-win.data.microsoft.com # Required for Xbox App game installs and downloads.
-watson.telemetry.microsoft.com # Crash/error reporting (required for some achievement pops).
+settings-win.data.microsoft.com # Xbox App game installs and downloads.
+watson.telemetry.microsoft.com # Crash/error reporting.
