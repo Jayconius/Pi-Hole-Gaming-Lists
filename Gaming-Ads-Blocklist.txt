@@ -59,4 +59,3 @@ www.google-analytics.com   # Used to track if ads/popups were engaged with
 adnxs.com                  # AppNexus global ad-delivery infrastructure
 ad-delivery.net            # Generic node used by multiple smaller ad networks
 criteo.com                 # Retargeting ads (the ones that follow you around)
-s.youtube.com              # Watch/Search history tracking (blocks profile building)
