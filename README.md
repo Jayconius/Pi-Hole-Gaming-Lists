@@ -2,7 +2,7 @@
 
 > **DNS whitelists and blocklists for gamers** — keeps achievements, cloud saves, gacha pulls, storefronts, and multiplayer working while blocking ads and trackers across every major gaming platform.
 
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-March%202026-brightgreen?style=flat-square)](https://github.com/Jayconius/Pi-Hole-Gaming-Lists/commits/main)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202026-brightgreen?style=flat-square)](https://github.com/Jayconius/Pi-Hole-Gaming-Lists/commits/main)
 [![Platforms](https://img.shields.io/badge/Platforms-20%2B-blue?style=flat-square)](#-platform-coverage)
 [![Compatible](https://img.shields.io/badge/Compatible-Pi--hole%20%7C%20AdGuard%20Home-orange?style=flat-square)](#-how-to-use)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
@@ -76,6 +76,11 @@ Each platform is fully covered for login, achievements, cloud saves, multiplayer
 | Paradox Launcher | ✅ | ✅ | ✅ | ✅ (Mods) | ✅ |
 | Roblox | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Discord | ✅ | N/A | N/A | N/A | ✅ |
+| Square Enix / Final Fantasy XIV | ✅ | N/A | N/A | ✅ (Patches) | ✅ |
+| GeForce NOW | ✅ | N/A | N/A | N/A | ✅ (Streaming) |
+| Twitch & Prime Gaming | ✅ | N/A | N/A | ✅ (Drops / Loot) | N/A |
+
+Also includes **anti-cheat** domains (Easy Anti-Cheat, BattlEye) — games using them will refuse to launch if these are blocked.
 
 ### Gaming-Gacha-Whitelist.txt
 
