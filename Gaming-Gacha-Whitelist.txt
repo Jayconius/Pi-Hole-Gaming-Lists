@@ -1,6 +1,6 @@
 # ==========================================================
 #   PIHOLE WHITELIST - FREE TO PLAY GACHA GAMES
-#                     October 2026
+#                     November 2026
 #
 #   Covers: Login, CDN, gacha/banner pulls, shop, cloud
 #   saves, events, friend lists, and patch downloads for
