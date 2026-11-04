@@ -14,7 +14,7 @@
 | File | Type | Description |
 |------|------|-------------|
 | [`Gaming-Whitelist.txt`](Gaming-Whitelist.txt) | ✅ Whitelist | Allows essential domains for 20+ gaming platforms — login, achievements, cloud saves, store, CDN |
-| [`Gaming-Gacha-Whitelist.txt`](Gaming-Gacha-Whitelist.txt) | ✅ Whitelist | Allows domains for the top 20 F2P gacha games — login, gacha pulls, events, patch downloads |
+| [`Gaming-Gacha-Whitelist.txt`](Gaming-Gacha-Whitelist.txt) | ✅ Whitelist | Allows domains for 33 F2P gacha games — login, gacha pulls, events, patch downloads |
 | [`Gaming-Ads-Blocklist.txt`](Gaming-Ads-Blocklist.txt) | 🚫 Blocklist | Blocks ad servers and trackers in game launchers and mod managers |
 
 ---
@@ -103,12 +103,24 @@ Covers login, gacha/banner pulls, events, friend lists, and patch delivery for a
 | Path to Nowhere | AISNO Games | Mobile |
 | Tower of Fantasy | Hotta Studio / Level Infinite | PC, Mobile |
 | Solo Leveling: Arise | Netmarble | PC, Mobile |
-| Infinity Nikki | Infold Games / Level Infinite | PC, Mobile |
-| Uma Musume: Pretty Derby | Cygames / DMM | PC, Mobile |
+| Infinity Nikki | Infold Games | PC, Mobile |
+| Uma Musume: Pretty Derby | Cygames | PC, Mobile |
 | Dragon Ball Legends | Bandai Namco | Mobile |
 | Dragon Ball Z: Dokkan Battle | Bandai Namco | Mobile |
 | Pokémon TCG Pocket | DeNA / The Pokémon Company | Mobile |
-| Neverness to Everness | Seasun Games | PC, Mobile |
+| Neverness to Everness | Hotta Studio / Perfect World | PC, Mobile |
+| Blue Archive | Nexon | PC, Mobile |
+| Epic Seven | Smilegate | PC, Mobile |
+| Girls' Frontline 2: Exilium | Sunborn | PC, Mobile |
+| Azur Lane | Manjuu / Yostar | Mobile |
+| Mahjong Soul | Cat Food Studio / Yostar | PC, Mobile |
+| Stella Sora | Yostar | PC, Mobile |
+| Snowbreak: Containment Zone | Seasun Games | PC, Mobile |
+| Love and Deepspace | Infold Games | Mobile |
+| Cookie Run: Kingdom | Devsisters | Mobile |
+| Persona 5: The Phantom X | Sega / Perfect World | PC, Mobile |
+| Duet Night Abyss | Pan Studio / Hero Games | PC, Mobile |
+| Brown Dust 2 | Neowiz | PC, Mobile |
 
 ---
 
