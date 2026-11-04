@@ -1,5 +1,5 @@
 # ==========================================================
-#      GAMING ADS, TELEMETRY & WEB HARDENING - March 2026
+#      GAMING ADS, TELEMETRY & WEB HARDENING - November 2026
 # ==========================================================
 
 # --- Overwolf & CurseForge Ad Delivery ---
@@ -12,32 +12,21 @@ mrkt.forgecdn.net          # Primary CurseForge ad-delivery
 ads.pubmatic.com           # Overwolf third-party ad partner
 overwolf-d.openx.net       # Ad exchange for Overwolf apps
 ads.overwolf.com           # Direct ad-serving domain for internal apps
-edge.overwolf.com          # Content delivery (Caution: may break app store)
 
 # --- Overwolf & Launcher Telemetry ---
 tracking.overwolf.com      # Core usage tracking for the Overwolf overlay
 analyticsnew.overwolf.com  # Modern endpoint for detailed app usage data
-analytics.overwolf.com     # Legacy usage reporting for older apps
 telemetry.nvidia.com       # Monitors GPU performance and GFE usage
-gfe.nvidia.com             # GeForce Experience authentication and telemetry
-tracking-sdk.ubi.com       # Captures player behavior in Ubisoft Connect
-uplay-connect.ubi.com      # Ubisoft launcher login and usage data
 telemetry.ea.com           # Primary usage tracking for the EA App
 river.data.ea.com          # Real-time event logging for EA games/launcher
 tracking.epicgames.com     # Core usage tracking for the Epic Games Store
 datarouter.ol.epicgames.com # Telemetry "router" for Epic Games services
 
-# --- Nexus Mods (Vortex) Web Ads & Tracking ---
-nexusmods.com.moatads.com  # Verifies if ads are actually "seen" by a human
+# --- Nexus Mods Website Ads & Tracking ---
 ib.adnxs.com               # Major ad exchange used for targeted bidding
-pixel.nexusmods.com        # Tracking "pixel" for Vortex/Nexus web activity
-events.nexusmods.com       # Standardized event telemetry for the Vortex client
 
 # --- General Game Telemetry & Spyware ---
 api.redshell.io            # RedShell (cross-game player tracking API)
-inbox.redshell.io          # Data collection endpoint for RedShell scripts
-data.unity_ads.com         # Unity-specific ad network telemetry
-stats.unity3d.com          # Hardware/usage stats sent from Unity-engine games
 config.unityads.unity3d.com # Fetches ad layouts and settings for games
 cdp.cloud.unity3d.com      # Modern "Customer Data Platform" for Unity telemetry
 crash.steampowered.com     # Automatic crash reporting for Steam (Safe to block)
@@ -59,3 +48,283 @@ www.google-analytics.com   # Used to track if ads/popups were engaged with
 adnxs.com                  # AppNexus global ad-delivery infrastructure
 ad-delivery.net            # Generic node used by multiple smaller ad networks
 criteo.com                 # Retargeting ads (the ones that follow you around)
+
+# --- Overwolf & Thunderstore Ad Delivery & Telemetry ---
+s.nitropay.com             # NitroPay ad network used by CurseForge
+sync.intentiq.com          # IntentIQ ID sync (named in Overwolf's owads.min.js)
+sync-gdpr.intentiq.com     # IntentIQ ID sync (named in Overwolf's owads.min.js)
+analyticssec.overwolf.com  # Overwolf analytics (seen on CurseForge)
+apps-errors.overwolf.com   # Overwolf app error reporting
+www.clarity.ms             # Microsoft Clarity session recording
+otlp-proxy.workers.thunderstore.io # Thunderstore telemetry proxy
+o578525.ingest.sentry.io   # Crash reporting seen alongside Thunderstore
+
+# --- Modrinth App Ad Delivery (Aditude / Prebid) ---
+dn0qt3r0xannq.cloudfront.net # Modrinth's Prebid ad loader script
+edge.aditude.io            # Aditude ad server (Modrinth's ad partner)
+geo.aditude.io             # Aditude geo-targeting lookup
+raven-edge.aditude.io      # Aditude ad event reporting
+cw-static.aditude.io       # Aditude static ad scripts
+bservr.com                 # Ad script loaded on Modrinth pages
+cadmus.script.ac           # Ad-quality scanner bundled with the ad stack
+geo-location.prebid.cloud  # Prebid geo lookup for ad targeting
+static.kueezrtb.com        # Kueez ad bidder
+static.vidazoo.com         # Vidazoo video ad bidder
+servedby.flashtalking.com  # Ad creative delivery (seen in Modrinth app traffic)
+pixel.adsafeprotected.com  # IAS ad-view verification (seen in Modrinth app traffic)
+static.adsafeprotected.com # IAS verification scripts
+fw.adsafeprotected.com     # IAS fraud/viewability checks
+cdn.doubleverify.com       # DoubleVerify verification scripts
+pub.doubleverify.com       # DoubleVerify publisher pixel
+tps.doubleverify.com       # DoubleVerify tracking pixel
+hbopenbid.pubmatic.com     # PubMatic bid requests
+bidder.criteo.com          # Criteo bid requests
+c.amazon-adsystem.com      # Amazon ad bidding script (apstag)
+ssc.33across.com           # 33Across bid requests
+contextual.media.net       # Media.net ad scripts
+hb.yellowblue.io           # Rise ad bidder
+imasdk.googleapis.com      # Google video ad SDK (pre-roll/rewarded video)
+ad.adsrvr.org              # Ad network host - adsrvr.org
+amspbs.com                 # Ad bid requests (seen in Modrinth app traffic)
+api.id5-sync.com           # ID5 user ID sync
+cdn.mgaru.dev              # myGaru ad ID script
+connectid.analytics.yahoo.com # Yahoo ConnectID user sync
+dmp.im-apps.net            # IM Apps audience data
+sync6.im-apps.net          # IM Apps cookie sync
+event-ingestor.judy.pnap.aditude.cloud # Aditude ad event reporting
+exchange.kueezrtb.com      # Kueez ad exchange
+gtrack.kueezrtb.com        # Kueez tracking
+track.kueezrtb.com         # Kueez tracking
+u.kueezrtb.com             # Kueez user sync
+hb.minutemedia-prebid.com  # Minute Media ad bid requests
+i.clean.gg                 # Ad-quality scanner bundled with the ad stack
+ident.mygaru.com           # myGaru ad ID lookup
+match.aditude.cloud        # Aditude cookie sync
+raven-static.aditude.io    # Aditude static ad scripts
+server.cpmstar.com         # CPMStar game ad network
+visit-server.inmobi-choice.io # InMobi Choice ad consent service
+
+# --- Header-Bidding Exchanges (captured from live mod manager ads, Nov 2026) ---
+sync.1rx.io                # Cookie/ID sync - 1rx.io
+s0.2mdn.net                # Ad network host - 2mdn.net
+ssc-cms.33across.com       # Ad network host - 33across.com
+ad.360yield.com            # Ad network host - 360yield.com
+dsp.360yield.com           # Ad bid requests - 360yield.com
+ice.360yield.com           # Ad bid requests - 360yield.com
+eb2.3lift.com              # Ad network host - 3lift.com
+tlx.3lift.com              # Ad bid requests - 3lift.com
+euw2-sync.a-mo.net         # Cookie/ID sync - a-mo.net
+prebid.a-mo.net            # Ad bid requests - a-mo.net
+sync.a-mo.net              # Cookie/ID sync - a-mo.net
+openx-ums.acuityplatform.com # Ad network host - acuityplatform.com
+a.ad.gt                    # Ad network host - ad.gt
+id.hadron.ad.gt            # Cookie/ID sync - ad.gt
+ids.ad.gt                  # Cookie/ID sync - ad.gt
+ids4.ad.gt                 # Cookie/ID sync - ad.gt
+p.ad.gt                    # Cookie/ID sync - ad.gt
+pixels.ad.gt               # Cookie/ID sync - ad.gt
+seg.ad.gt                  # Cookie/ID sync - ad.gt
+adx.adform.net             # Ad bid requests - adform.net
+c1.adform.net              # Ad network host - adform.net
+cm.adform.net              # Cookie/ID sync - adform.net
+track.adform.net           # Ad network host - adform.net
+cm.adgrx.com               # Cookie/ID sync - adgrx.com
+dsp-cookie.adfarm1.adition.com # Cookie/ID sync - adition.com
+dsp.adkernel.com           # Ad bid requests - adkernel.com
+cs.admanmedia.com          # Cookie/ID sync - admanmedia.com
+dsp-service.admatic.de     # Ad bid requests - admatic.de
+ib.adnxs-simple.com        # Ad bid requests - adnxs-simple.com
+secure.adnxs.com           # Ad network host - adnxs.com
+bntb.adsinteractive.com    # Ad network host - adsinteractive.com
+cstb.adsinteractive.com    # Ad network host - adsinteractive.com
+data.adsrvr.org            # Ad network host - adsrvr.org
+direct.adsrvr.org          # Ad network host - adsrvr.org
+enduser.adsrvr.org         # Ad network host - adsrvr.org
+ie1-bid.adsrvr.org         # Ad bid requests - adsrvr.org
+match.adsrvr.org           # Cookie/ID sync - adsrvr.org
+s.update.adsrvr.org        # Ad network host - adsrvr.org
+v.adsrvr.org               # Ad network host - adsrvr.org
+ep1.adtrafficquality.google # Ad network host - adtrafficquality.google
+ep2.adtrafficquality.google # Ad network host - adtrafficquality.google
+cm-mx.advolve.io           # Ad network host - advolve.io
+aax-eu.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+aax.amazon-adsystem.com    # Ad network host - amazon-adsystem.com
+aes.eu-central.3px.axp.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+client.aps.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+config.aps.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+s.amazon-adsystem.com      # Ad network host - amazon-adsystem.com
+ts.amazon-adsystem.com     # Ad network host - amazon-adsystem.com
+web-banner.ads.aps.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+web-cf-event-cell8013.ads.aps.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+web-video.ads.aps.amazon-adsystem.com # Ad network host - amazon-adsystem.com
+match.prod.bidr.io         # Cookie/ID sync - bidr.io
+x.bidswitch.net            # Cookie/ID sync - bidswitch.net
+match.adsby.bidtheatre.com # Cookie/ID sync - bidtheatre.com
+tr.blismedia.com           # Ad network host - blismedia.com
+cdn.brandmetrics.com       # Ad network host - brandmetrics.com
+collector.brandmetrics.com # Ad network host - brandmetrics.com
+bttrack.com                # Ad network host - bttrack.com
+dsum-sec.casalemedia.com   # Cookie/ID sync - casalemedia.com
+dsum.casalemedia.com       # Cookie/ID sync - casalemedia.com
+htlb.casalemedia.com       # Ad bid requests - casalemedia.com
+ssum-sec.casalemedia.com   # Cookie/ID sync - casalemedia.com
+us.ck-ie.com               # Ad network host - ck-ie.com
+s.company-target.com       # Ad network host - company-target.com
+sync.connectad.io          # Cookie/ID sync - connectad.io
+bh.contextweb.com          # Ad network host - contextweb.com
+ads.creative-serving.com   # Ad network host - creative-serving.com
+creativecdn.com            # Ad network host - creativecdn.com
+invstatic101.creativecdn.com # Ad network host - creativecdn.com
+dis.criteo.com             # Ad network host - criteo.com
+dis.eu.criteo.com          # Ad network host - criteo.com
+grid-bidder.criteo.com     # Ad bid requests - criteo.com
+gum.criteo.com             # Ad network host - criteo.com
+ssp-sync.criteo.com        # Cookie/ID sync - criteo.com
+static.criteo.net          # Ad network host - criteo.net
+bcp.crwdcntrl.net          # Ad network host - crwdcntrl.net
+sync.crwdcntrl.net         # Cookie/ID sync - crwdcntrl.net
+tags.crwdcntrl.net         # Ad network host - crwdcntrl.net
+ipac.ctnsnet.com           # Ad network host - ctnsnet.com
+d5p.de17a.com              # Ad network host - de17a.com
+match.deepintent.com       # Cookie/ID sync - deepintent.com
+dpm.demdex.net             # Cookie/ID sync - demdex.net
+target.digitalaudience.io  # Ad network host - digitalaudience.io
+eyeota-match.dotomi.com    # Cookie/ID sync - dotomi.com
+inmobi-match.dotomi.com    # Cookie/ID sync - dotomi.com
+match.sync.ad.cpe.dotomi.com # Cookie/ID sync - dotomi.com
+openx2-match.dotomi.com    # Cookie/ID sync - dotomi.com
+proc.ad.cpe.dotomi.com     # Ad network host - dotomi.com
+pubmatic-match.dotomi.com  # Cookie/ID sync - dotomi.com
+web.hb.ad.cpe.dotomi.com   # Ad network host - dotomi.com
+cm.g.doubleclick.net       # Cookie/ID sync - doubleclick.net
+pubads.g.doubleclick.net   # Ad network host - doubleclick.net
+securepubads.g.doubleclick.net # Ad network host - doubleclick.net
+green.erne.co              # Ad network host - erne.co
+ittpx.eskimi.com           # Ad network host - eskimi.com
+lb.eu-1-id5-sync.com       # Cookie/ID sync - eu-1-id5-sync.com
+lbs.eu-1-id5-sync.com      # Cookie/ID sync - eu-1-id5-sync.com
+sync-tm.everesttech.net    # Cookie/ID sync - everesttech.net
+ps.eyeota.net              # Cookie/ID sync - eyeota.net
+secure.cdn.fastclick.net   # Ad network host - fastclick.net
+user-sync.fwmrm.net        # Cookie/ID sync - fwmrm.net
+cm-supply-web.gammaplatform.com # Ad network host - gammaplatform.com
+rumcdn.geoedge.be          # Ad network host - geoedge.be
+g2.gumgum.com              # Ad bid requests - gumgum.com
+rtb.gumgum.com             # Ad bid requests - gumgum.com
+usersync.gumgum.com        # Cookie/ID sync - gumgum.com
+cdn.hadronid.net           # Ad network host - hadronid.net
+cdn.id5-sync.com           # Cookie/ID sync - id5-sync.com
+id5-sync.com               # Cookie/ID sync - id5-sync.com
+api.w.inmobi.com           # Ad network host - inmobi.com
+sync.inmobi.com            # Cookie/ID sync - inmobi.com
+sync.ipredictive.com       # Cookie/ID sync - ipredictive.com
+crb.kargo.com              # Ad bid requests - kargo.com
+krk2.kargo.com             # Ad bid requests - kargo.com
+i.liadm.com                # Ad network host - liadm.com
+ap.lijit.com               # Ad bid requests - lijit.com
+ce.lijit.com               # Ad network host - lijit.com
+px.ads.linkedin.com        # Cookie/ID sync - linkedin.com
+csync.loopme.me            # Cookie/ID sync - loopme.me
+cs.media.net               # Cookie/ID sync - media.net
+hbx.media.net              # Ad bid requests - media.net
+prebid.media.net           # Ad bid requests - media.net
+cookie-matching.mediarithmics.com # Cookie/ID sync - mediarithmics.com
+exchange.mediavine.com     # Ad network host - mediavine.com
+rtb.mfadsrvr.com           # Ad bid requests - mfadsrvr.com
+cm.mgid.com                # Cookie/ID sync - mgid.com
+cs-rtb.minutemedia-prebid.com # Ad bid requests - minutemedia-prebid.com
+cs.minutemedia-prebid.com  # Cookie/ID sync - minutemedia-prebid.com
+ml314.com                  # Ad network host - ml314.com
+fast.nexx360.io            # Ad network host - nexx360.io
+visitor.omnitagjs.com      # Ad network host - omnitagjs.com
+pixel-eu.onaudience.com    # Cookie/ID sync - onaudience.com
+pixel.onaudience.com       # Cookie/ID sync - onaudience.com
+impressions.onelink.me     # Ad network host - onelink.me
+onetag-sys.com             # Ad network host - onetag-sys.com
+eu-u.openx.net             # Cookie/ID sync - openx.net
+google-bidout-d.openx.net  # Ad bid requests - openx.net
+rtb.openx.net              # Ad bid requests - openx.net
+u.openx.net                # Cookie/ID sync - openx.net
+us-u.openx.net             # Cookie/ID sync - openx.net
+oa.openxcdn.net            # Ad network host - openxcdn.net
+t.adx.opera.com            # Ad network host - opera.com
+tracker-shr.ortb.net       # Ad network host - ortb.net
+b1sync.outbrain.com        # Cookie/ID sync - outbrain.com
+lal.p7cloud.net            # Ad network host - p7cloud.net
+location.p7cloud.net       # Ad network host - p7cloud.net
+silo60.p7cloud.net         # Ad network host - p7cloud.net
+sync.p7cloud.net           # Cookie/ID sync - p7cloud.net
+ua.p7cloud.net             # Ad network host - p7cloud.net
+sync.pinklion.io           # Cookie/ID sync - pinklion.io
+cs.playdigo.com            # Cookie/ID sync - playdigo.com
+dsp-2.presage.io           # Ad bid requests - presage.io
+ms-cookie-sync.presage.io  # Cookie/ID sync - presage.io
+live.primis.tech           # Ad network host - primis.tech
+image2.pubmatic.com        # Cookie/ID sync - pubmatic.com
+image4.pubmatic.com        # Cookie/ID sync - pubmatic.com
+image6.pubmatic.com        # Cookie/ID sync - pubmatic.com
+image8.pubmatic.com        # Cookie/ID sync - pubmatic.com
+ow.pubmatic.com            # Ad bid requests - pubmatic.com
+simage2.pubmatic.com       # Cookie/ID sync - pubmatic.com
+simage4.pubmatic.com       # Cookie/ID sync - pubmatic.com
+cms.quantserve.com         # Ad network host - quantserve.com
+p.rfihub.com               # Cookie/ID sync - rfihub.com
+api.rlcdn.com              # Ad network host - rlcdn.com
+id.rlcdn.com               # Cookie/ID sync - rlcdn.com
+idsync.rlcdn.com           # Cookie/ID sync - rlcdn.com
+wt.rqtrk.eu                # Ad network host - rqtrk.eu
+esp.rtbhouse.com           # Ad network host - rtbhouse.com
+eus.rubiconproject.com     # Ad network host - rubiconproject.com
+fastlane.rubiconproject.com # Ad bid requests - rubiconproject.com
+pixel-eu.rubiconproject.com # Cookie/ID sync - rubiconproject.com
+pixel-us-east.rubiconproject.com # Cookie/ID sync - rubiconproject.com
+pixel.rubiconproject.com   # Cookie/ID sync - rubiconproject.com
+prebid-server.rubiconproject.com # Ad bid requests - rubiconproject.com
+secure-assets.rubiconproject.com # Ad network host - rubiconproject.com
+token.rubiconproject.com   # Cookie/ID sync - rubiconproject.com
+srv.scalibur.io            # Ad network host - scalibur.io
+sb.scorecardresearch.com   # Ad network host - scorecardresearch.com
+cadmus2.script.ac          # Ad network host - script.ac
+s.seedtag.com              # Ad network host - seedtag.com
+se.semasio.net             # Cookie/ID sync - semasio.net
+uipglob.semasio.net        # Cookie/ID sync - semasio.net
+sync.sharethis.com         # Cookie/ID sync - sharethis.com
+um.simpli.fi               # Cookie/ID sync - simpli.fi
+pixel-sync.sitescout.com   # Cookie/ID sync - sitescout.com
+prebid.ad.smaato.net       # Ad bid requests - smaato.net
+s.ad.smaato.net            # Ad network host - smaato.net
+rtb-csync.smartadserver.com # Cookie/ID sync - smartadserver.com
+ssb-global.smartadserver.com # Ad network host - smartadserver.com
+ssbsync-global.smartadserver.com # Cookie/ID sync - smartadserver.com
+ssbsync.smartadserver.com  # Cookie/ID sync - smartadserver.com
+sync.smartadserver.com     # Cookie/ID sync - smartadserver.com
+csync.smilewanted.com      # Cookie/ID sync - smilewanted.com
+prebid.smilewanted.com     # Ad bid requests - smilewanted.com
+sync.go.sonobi.com         # Cookie/ID sync - sonobi.com
+sync.springserve.com       # Cookie/ID sync - springserve.com
+sync.srv.stackadapt.com    # Cookie/ID sync - stackadapt.com
+syncingbridge.com          # Cookie/ID sync - syncingbridge.com
+pixel.tapad.com            # Cookie/ID sync - tapad.com
+sonata-notifications.taptapnetworks.com # Ad network host - taptapnetworks.com
+elb.the-ozone-project.com  # Ad network host - the-ozone-project.com
+a.tribalfusion.com         # Ad network host - tribalfusion.com
+s.tribalfusion.com         # Ad network host - tribalfusion.com
+hb.trustedstack.com        # Ad bid requests - trustedstack.com
+ad.turn.com                # Ad network host - turn.com
+d.turn.com                 # Ad network host - turn.com
+sync.targeting.unrulymedia.com # Cookie/ID sync - unrulymedia.com
+targeting.unrulymedia.com  # Ad network host - unrulymedia.com
+cpm.vistarsagency.com      # Ad network host - vistarsagency.com
+ssp.wp.pl                  # Ad bid requests - wp.pl
+c2shb.pubgw.yahoo.com      # Ad network host - yahoo.com
+ups.analytics.yahoo.com    # Cookie/ID sync - yahoo.com
+cs-server-s2s.yellowblue.io # Ad network host - yellowblue.io
+cs.yellowblue.io           # Cookie/ID sync - yellowblue.io
+sync-amz.ads.yieldmo.com   # Cookie/ID sync - yieldmo.com
+gw-iad-bid.ymmobi.com      # Ad bid requests - ymmobi.com
+mwzeom.zeotap.com          # Ad network host - zeotap.com
+d.adroll.com               # AdRoll retargeting (seen in CurseForge app traffic)
+dsp.nrich.ai               # Nrich ad bidder (seen in CurseForge app traffic)
+id.a-mx.com                # AMX user ID sync (seen in CurseForge app traffic)
+sync.adkernel.com          # AdKernel cookie sync (seen in CurseForge app traffic)
+ums.acuityplatform.com     # Acuity user sync (seen in CurseForge app traffic)

@@ -111,7 +111,7 @@ Covers login, gacha/banner pulls, events, friend lists, and patch delivery for a
 
 `Gaming-Ads-Blocklist.txt` specifically targets:
 
-- Banner and video ads in **mod managers** (CurseForge, Nexus Mods)
+- Banner and video ads in **mod managers and mod sites** (CurseForge, Thunderstore Mod Manager, Modrinth App, Nexus Mods website)
 - Ads and sponsored content in **game launchers** (Epic, EA App, GOG)
 - Tracking pixels and telemetry in **software dashboards**
 - Aggressive ad-injection in **free-to-play game UIs**
@@ -124,9 +124,13 @@ Covers login, gacha/banner pulls, events, friend lists, and patch delivery for a
 
 **CurseForge** — If the launcher shows a blank page after applying the blocklist, delete `%AppData%\CurseForge\cache` and restart.
 
-**Amazon App** — If your Amazon shopping app breaks, whitelist `aax-eu.amazon-adsystem.com` or `aax-us.amazon-adsystem.com`. This domain is on the blocklist because it serves ads inside CurseForge.
+**Amazon App** — If your Amazon shopping app or Amazon ads-related pages break, whitelist `aax.amazon-adsystem.com`, `aax-eu.amazon-adsystem.com`, or `c.amazon-adsystem.com`. These are on the blocklist because they serve ads inside mod managers.
 
 **Google Shopping** — If product links or images break in Google Shopping, whitelist `googleads.g.doubleclick.net`. Note this will also re-enable ad-incentive rewards in some mobile apps (watch an ad for a reward).
+
+**Rewarded Video Ads** — `imasdk.googleapis.com` is on the blocklist, so "watch an ad for a reward" videos may stop working in some mobile games. Whitelist it if you rely on them.
+
+**Modrinth App** — When its ads are blocked, the app can send a very large number of repeat DNS lookups (see [modrinth/code#5367](https://github.com/modrinth/code/issues/5367)). If your Pi-hole starts rate-limiting that device, raise the rate limit in Pi-hole's settings.
 
 **Minecraft Bedrock Marketplace** — If purchased content or skin packs are missing, make sure `api.minecraftservices.com` is whitelisted. This is the most common cause of Marketplace issues behind a Pi-hole.
 
