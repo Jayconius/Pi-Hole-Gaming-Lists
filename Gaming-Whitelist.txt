@@ -88,6 +88,7 @@ origin.com                     # Legacy store domain used for redirects and lega
 sdk.split.io                   # ESSENTIAL: Feature flagging service - prevents library view from disappearing.
 service-aggregation-layer.juno.ea.com # EA App core backend.
 signin.ea.com                  # EA account sign-in.
+telemetry.ea.com               # Required for Time Played and Achievement tracking.
 www.ea.com                     # Main web portal and storefront front-end.
 www.origin.com                 # Primary store front-end for EA titles.
 
@@ -118,6 +119,7 @@ metrics.ol.epicgames.com       # Cloud save synchronization and telemetry logs.
 orderprocessor-public-service-ecomprod01.ol.epicgames.com # Purchase/transaction processing.
 static-assets-prod.epicgames.com # Primary source for launcher UI and game thumbnails.
 store.epicgames.com            # Epic Games Store front end.
+tracking.epicgames.com         # Required for achievement pops and syncing progress.
 www.epicgames.com              # Web portal and store front-end.
 xmpp-service-prod.ol.epicgames.com # Friends, presence, and party chat.
 
