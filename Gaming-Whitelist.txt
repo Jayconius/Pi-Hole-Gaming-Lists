@@ -88,7 +88,6 @@ origin.com                     # Legacy store domain used for redirects and lega
 sdk.split.io                   # ESSENTIAL: Feature flagging service - prevents library view from disappearing.
 service-aggregation-layer.juno.ea.com # EA App core backend.
 signin.ea.com                  # EA account sign-in.
-telemetry.ea.com               # Required for Time Played and Achievement tracking.
 www.ea.com                     # Main web portal and storefront front-end.
 www.origin.com                 # Primary store front-end for EA titles.
 
@@ -101,7 +100,6 @@ api.epicgames.dev              # ESSENTIAL: Matchmaking and achievement sync for
 catalog-public-service-prod06.ol.epicgames.com    # Store catalog for browsing and purchasing.
 cdn1.unrealengine.com          # CDN for launcher assets and game content (1 of 2).
 cdn2.unrealengine.com          # CDN for launcher assets and game content (2 of 2).
-datarouter.ol.epicgames.com    # Telemetry and data routing for the launcher.
 download.epicgames.com         # Epic game download CDN.
 entitlement-public-service-prod08.ol.epicgames.com # Verifies game ownership.
 epic-games-api-oss-production.s3.amazonaws.com # S3 bucket for library and game art.
@@ -120,7 +118,6 @@ metrics.ol.epicgames.com       # Cloud save synchronization and telemetry logs.
 orderprocessor-public-service-ecomprod01.ol.epicgames.com # Purchase/transaction processing.
 static-assets-prod.epicgames.com # Primary source for launcher UI and game thumbnails.
 store.epicgames.com            # Epic Games Store front end.
-tracking.epicgames.com         # Required for achievement pops and syncing progress.
 www.epicgames.com              # Web portal and store front-end.
 xmpp-service-prod.ol.epicgames.com # Friends, presence, and party chat.
 
@@ -336,7 +333,6 @@ store.steampowered.com         # Steam Store front end.
 www.steampowered.com           # Main web portal front-end.
 
 # --- SYSTEM & GAME ENGINES ---
-config.unityads.unity3d.com    # Checks game settings and regional configs.
 ctldl.windowsupdate.com        # Certificate Trust List for Windows cert updates.
 dl.delivery.mp.microsoft.com   # Windows Store game downloads/updates.
 licensing.mp.microsoft.com     # Verifies license for MS Store/Game Pass games.
