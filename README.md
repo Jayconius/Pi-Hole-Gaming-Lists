@@ -13,9 +13,9 @@
 
 | File | Type | Description |
 |------|------|-------------|
-| [`Gaming-Whitelist.txt`](Gaming-Whitelist.txt) | ✅ Whitelist | Allows essential domains for 20+ gaming platforms — login, achievements, cloud saves, store, CDN |
-| [`Gaming-Gacha-Whitelist.txt`](Gaming-Gacha-Whitelist.txt) | ✅ Whitelist | Allows domains for 33 F2P gacha games — login, gacha pulls, events, patch downloads |
-| [`Gaming-Ads-Blocklist.txt`](Gaming-Ads-Blocklist.txt) | 🚫 Blocklist | Blocks ad servers and trackers in game launchers and mod managers |
+| [`Gaming-Whitelist.txt`](Gaming-Whitelist.txt) | ✅ Whitelist | Allows essential domains for 20+ gaming platforms — login, achievements, cloud saves, store, CDN. Updated November 2026 |
+| [`Gaming-Gacha-Whitelist.txt`](Gaming-Gacha-Whitelist.txt) | ✅ Whitelist | Allows domains for 33 F2P gacha games — login, gacha pulls, events, patch downloads. Updated November 2026 |
+| [`Gaming-Ads-Blocklist.txt`](Gaming-Ads-Blocklist.txt) | 🚫 Blocklist | Blocks ad servers and trackers in game launchers and mod managers. Updated November 2026 |
 
 ---
 
