@@ -17,9 +17,7 @@ ads.overwolf.com           # Direct ad-serving domain for internal apps
 tracking.overwolf.com      # Core usage tracking for the Overwolf overlay
 analyticsnew.overwolf.com  # Modern endpoint for detailed app usage data
 telemetry.nvidia.com       # Monitors GPU performance and GFE usage
-telemetry.ea.com           # Primary usage tracking for the EA App
 river.data.ea.com          # Real-time event logging for EA games/launcher
-tracking.epicgames.com     # Core usage tracking for the Epic Games Store
 datarouter.ol.epicgames.com # Telemetry "router" for Epic Games services
 
 # --- Nexus Mods Website Ads & Tracking ---
