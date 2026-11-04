@@ -1,12 +1,14 @@
 # ==========================================================
-#   PIHOLE WHITELIST - TOP 20 FREE TO PLAY GACHA GAMES
-#                      March 2026
+#   PIHOLE WHITELIST - FREE TO PLAY GACHA GAMES
+#                     October 2026
 #
 #   Covers: Login, CDN, gacha/banner pulls, shop, cloud
 #   saves, events, friend lists, and patch downloads for
-#   all 20 games. Shared platform dependencies (Steam,
+#   33 games. Shared platform dependencies (Steam,
 #   Epic, Xbox/Microsoft, Google Play) are listed at the
 #   bottom - whitelist those too if not already done.
+#
+#   Every domain verified to exist in public DNS (Oct 2026).
 # ==========================================================
 
 
@@ -19,42 +21,61 @@ hoyoverse.com                       # Main HoYoverse account portal and login.
 account.hoyoverse.com               # Account management, email/password login.
 api-account-os.hoyoverse.com        # Account API - login tokens and session handling.
 sg-public-data-api.hoyoverse.com    # Global public data API for all HoYo titles.
-webapi.account.hoyoverse.com        # Web-based account API for launcher and browser login.
+sg-public-api.hoyoverse.com         # Account, redeem codes, and daily check-in API.
 hoyolab.com                         # HoYoLAB community - daily check-in rewards and codes.
 act.hoyolab.com                     # Event and daily check-in action endpoint.
+bbs-api-os.hoyolab.com              # HoYoLAB community API - battle chronicle, notes.
+act.hoyoverse.com                   # Web events and login-bonus pages.
 api-os-takumi.hoyoverse.com         # OS (global) game server API - core game connectivity.
+api-os-takumi-static.hoyoverse.com  # Static game data API for Genshin (character, banner data).
 api-takumi.mihoyo.com               # Legacy miHoYo API still used by older client versions.
 mihoyo.com                          # Legacy root domain - still active for some auth flows.
 sdk-os-static.hoyoverse.com         # Static SDK assets for launcher and in-game overlays.
+sdk-os-static.mihoyo.com            # Legacy SDK static config still used by older clients.
 sdk-static.mihoyo.com               # Legacy static SDK domain (used by older game clients).
+sg-hyp-api.hoyoverse.com            # HoYoPlay launcher API - game list, updates, pre-downloads.
+hoyoplay.hoyoverse.com              # HoYoPlay launcher site and installer.
+fastcdn.hoyoverse.com               # Launcher and game asset CDN.
+webstatic.hoyoverse.com             # In-game web pages (notices, events, history).
+webstatic-sea.hoyoverse.com         # In-game web pages (SEA region).
+webstatic-sea.mihoyo.com            # Legacy in-game web pages (SEA region).
+operation-webstatic.hoyoverse.com   # Operations web pages - wish/warp history viewer.
+sg-cg-api.hoyoverse.com             # HoYoverse Cloud Gaming API.
 log-upload-os.hoyoverse.com         # Required for patch integrity checks and error reporting.
-overseauspider.yuanshen.com         # Genshin-specific analytics - required for session stability.
-abtest-api-os.hoyoverse.com         # A/B testing API used for gacha banner and event configs.
-cn-public-data.hoyoverse.com        # Global CDN for game news, event banners, thumbnails.
 
 # --- GENSHIN IMPACT ---
 genshin.hoyoverse.com               # Genshin main website and patch notes.
 yuanshen.com                        # Genshin's core game domain (original Chinese name).
 autopatchhk.yuanshen.com            # Game client auto-patch and repair download server.
-autopatch-os.hoyoverse.com          # Global OS patch delivery for Genshin updates.
+dispatchosglobal.yuanshen.com       # Global dispatch - server list on login.
+osasiadispatch.yuanshen.com         # Asia server dispatch.
+osusadispatch.yuanshen.com          # America server dispatch.
+oseurodispatch.yuanshen.com         # Europe server dispatch.
+oschtdispatch.yuanshen.com          # TW/HK/MO server dispatch.
 sg-hk4e-api.hoyoverse.com           # Genshin global game server API (daily missions, wishes).
 sg-hk4e-api-static.hoyoverse.com    # Static assets for Genshin game server API.
+hk4e-api-os.hoyoverse.com           # Genshin game API - mail, events, gacha log.
 hk4e-sdk-os.hoyoverse.com           # Genshin SDK OS endpoint - login and session tokens.
-api-os-takumi-static.hoyoverse.com  # Static game data API for Genshin (character, banner data).
+hk4e-sdk-os-static.hoyoverse.com    # Genshin SDK static config.
+public-operation-hk4e-sg.hoyoverse.com # Wish history.
 
 # --- HONKAI: STAR RAIL ---
 starrails.com                       # Star Rail main website.
 hsr.hoyoverse.com                   # Star Rail web portal and patch notes.
-autopatch-os-eur.hoyoverse.com      # EU patch server for Star Rail updates.
-sg-public-data-api.starrails.com    # Star Rail-specific public data API.
+globaldp-prod-os01.starrails.com    # Global dispatch - server list on login.
+public-operation-hkrpg-sg.hoyoverse.com # Warp history.
 
 # --- ZENLESS ZONE ZERO ---
 zenless.hoyoverse.com               # ZZZ main website and launcher portal.
-nap.hoyoverse.com                   # ZZZ internal API domain (nap = New Eridu Protocol).
+zenlesszonezero.com                 # ZZZ game domain.
+globaldp-prod-os01.zenlesszonezero.com # Global dispatch - server list on login.
+public-operation-nap-sg.hoyoverse.com # Signal Search history.
+sg-act-nap-api.hoyolab.com          # ZZZ HoYoLAB daily check-in.
 
 # --- HONKAI IMPACT 3RD ---
 honkaiimpact3.hoyoverse.com         # Honkai Impact 3rd website and account portal.
-global-sdk-static.hoyoverse.com     # Global SDK static assets shared by Honkai Impact 3rd.
+honkaiimpact3.com                   # Honkai Impact 3rd game domain.
+westglobal01.honkaiimpact3.com      # Global server gateway.
 
 
 # ----------------------------------------------------------
@@ -62,23 +83,35 @@ global-sdk-static.hoyoverse.com     # Global SDK static assets shared by Honkai 
 # ----------------------------------------------------------
 kurogames.com                       # Kuro Games main site, account login, and support.
 wutheringwaves.kurogames.com        # WuWa official portal, patch notes, and event pages.
-api.kurogames.com                   # Account API - login, token refresh, and profile data.
-cn-gm.kurogames.com                 # Game server management endpoint (global routing).
-wuwa-res.kurogames.com              # Game resource CDN - assets, textures, and UI elements.
-aki-gm.kurogames.com                # Core game server for matchmaking and session handling.
-git.kurogames.com                   # Patch delivery and game version management.
+kurogames.net                       # Kuro Games global services.
+kurogame-service.com                # Kuro SDK login and account services.
+aki-game.net                        # Wuthering Waves global game domain.
+aki-game2.net                       # Wuthering Waves global game domain.
+gmserver-api.aki-game2.net          # Convene (gacha) history.
+gmserver-api.aki-game2.com          # Convene (gacha) history - alternate domain.
+aki-gm-resources-oversea.aki-game.net # Global game resources and patches.
+hw-pcdownload-aws.aki-game.net      # PC client download CDN (AWS).
+hw-pcdownload-qcloud.aki-game.net   # PC client download CDN (Tencent Cloud).
+prod-alicdn-gamestarter.kurogame.com # Launcher CDN.
 
 
 # ----------------------------------------------------------
 # ARKNIGHTS (Hypergryph / Yostar)
 # ----------------------------------------------------------
 arknights.global                    # Arknights global portal and launcher authentication.
-hypergryph.com                      # Hypergryph developer backend (CN + routing for global).
+www.arknights.global                # Official global site and news.
+ak-conf.arknights.global            # Server config and network settings on boot.
+as.arknights.global                 # Global auth server - login.
+gs.arknights.global                 # Global game server.
+passport.arknights.global           # Yostar passport login.
+ark-us-static-online.yo-star.com    # Global asset and hot-update CDN.
+yo-star.com                         # Yostar account portal.
+webusstatic.yo-star.com             # Yostar web static assets.
 yostar.net                          # Yostar publisher backend - global login and account hub.
+hypergryph.com                      # Hypergryph developer backend (CN + routing for global).
 ak.hypergryph.com                   # Arknights official site and account auth (CN backend).
 as.hypergryph.com                   # Account server for Arknights login and token handling.
 terra-historicus.hypergryph.com     # In-game lore browser and official comics hub.
-prts.wiki                           # PRTS operator data - used by in-game links.
 
 
 # ----------------------------------------------------------
@@ -86,43 +119,39 @@ prts.wiki                           # PRTS operator data - used by in-game links
 # ----------------------------------------------------------
 endfield.gryphline.com              # Endfield official portal and account auth.
 gryphline.com                       # Gryphline developer backend for Endfield services.
-cdn-endfield.gryphline.com          # CDN for Endfield game assets and patch delivery.
+launcher.gryphline.com              # Gryphline launcher - installs and updates.
+web-api.gryphline.com               # Gryphline web API - accounts and events.
+as.gryphline.com                    # Gryphline auth server - login.
+beyond.hg-cdn.com                   # Endfield game asset CDN.
 
 
 # ----------------------------------------------------------
 # NIKKE: GODDESS OF VICTORY (Shift Up / Level Infinite)
 # ----------------------------------------------------------
 levelinfinite.com                   # Level Infinite (Tencent) publisher portal and login.
+nikke-en.com                        # Official NIKKE global site.
+nikke-kr.com                        # Official NIKKE KR site.
 nikke.gg                            # Official NIKKE companion site (codes, events, news).
-cloud.game.naver.com                # NAVER cloud gaming backend used for NIKKE PC login.
-logincdn.naver.com                  # NAVER CDN for login assets used in NIKKE auth flow.
-ssl.pstatic.net                     # NAVER static CDN - used for login thumbnails in NIKKE.
-ncsoftcdn.com                       # NCSoft CDN - NIKKE PC client asset delivery.
-nikke-us.game.naver.com             # NIKKE US server endpoint for login and matchmaking.
-nikke-eu.game.naver.com             # NIKKE EU server endpoint.
-nikke-asia.game.naver.com           # NIKKE Asia-Pacific server endpoint.
+blablalink.com                      # Official NIKKE companion community (Blablalink).
 tencentcs.com                       # Tencent Cloud CDN used for NIKKE patch and asset delivery.
 
 
 # ----------------------------------------------------------
 # PUNISHING: GRAY RAVEN (Kuro Games)
-# ----------------------------------------------------------
 # PGR is also made by Kuro Games - kurogames.com above
 # covers the account layer. These are PGR-specific.
+# ----------------------------------------------------------
 pgr.kurogame.net                    # PGR official portal and server connectivity.
-pgr-us.kurogame.net                 # PGR North America game server.
-pgr-eu.kurogame.net                 # PGR Europe game server.
-pgr-as.kurogame.net                 # PGR Asia-Pacific game server.
-cdn-pgr.kurogames.com               # CDN for PGR game assets and operator data.
 
 
 # ----------------------------------------------------------
 # FATE/GRAND ORDER (Aniplex / DELiGHTWORKS)
 # ----------------------------------------------------------
 fate-go.us                          # FGO Americas official site and client download.
+game.fate-go.us                     # NA game server.
+webview.fate-go.us                  # NA in-game news and web views.
 fate-go.jp                          # FGO Japan portal (still used for global account routing).
-api.fate-go.us                      # FGO Americas game API - login, gacha, and quest data.
-cdn.fate-go.us                      # CDN for FGO card art, servant images, and event assets.
+game.fate-go.jp                     # JP game server.
 aniplex.co.jp                       # Aniplex publisher backend for authentication routing.
 
 
@@ -132,109 +161,181 @@ aniplex.co.jp                       # Aniplex publisher backend for authenticati
 bluepoch.com                        # Bluepoch developer domain - account portal and login.
 re1999.bluepoch.com                 # Reverse: 1999 official site - login and patch portal.
 reverse1999.bluepoch.com            # Secondary game domain used for events and web links.
-cdn.bluepoch.com                    # CDN for R:1999 game assets, character art, and events.
-api.bluepoch.com                    # Account and game API - login tokens and save data.
 
 
 # ----------------------------------------------------------
 # LIMBUS COMPANY (Project Moon)
 # ----------------------------------------------------------
-projectmoon.hk                      # Project Moon official site and account login.
 limbuscompany.com                   # Limbus Company portal and game launcher auth.
-api.limbuscompany.com               # Game API - login, sinner data, and gacha (E.G.O gifts).
-cdn.limbuscompany.com               # CDN for Limbus game assets and event content.
-pm-user.com                         # Project Moon user account backend.
+projectmoon.studio                  # Project Moon official site.
 
 
 # ----------------------------------------------------------
 # PATH TO NOWHERE (AISNO Games)
 # ----------------------------------------------------------
-pathtono.com                        # Path to Nowhere official site and login portal.
-api.pathtono.com                    # Game API - login, fugitive (character) and case data.
-cdn.pathtono.com                    # CDN for game assets, case file art, and event banners.
 aisno.com                           # AISNO Games developer backend for auth routing.
+aisnogames.com                      # AISNO Games global site.
 
 
 # ----------------------------------------------------------
 # TOWER OF FANTASY (Level Infinite / Hotta Studio)
-# ----------------------------------------------------------
 # levelinfinite.com is already listed under NIKKE above.
-tofsea.com                          # Tower of Fantasy SEA server and account portal.
+# ----------------------------------------------------------
 tof.perfectworld.com                # ToF publisher endpoint for NA/EU login and accounts.
-res.helixtech.com                   # Hotta Studio CDN for ToF game resources and patches.
-fantasyto.com                       # ToF global game domain for matchmaking and sessions.
-cdn.tofgame.com                     # CDN for ToF character textures and world assets.
+toweroffantasy-global.com           # Official global site.
 
 
 # ----------------------------------------------------------
-# SOLO LEVELING: ARISE (Netmarble / Shift Up)
+# SOLO LEVELING: ARISE (Netmarble)
 # ----------------------------------------------------------
 netmarble.com                       # Netmarble publisher portal - login and account hub.
-cdn2.netmarble.com                  # Netmarble CDN for game assets and patch delivery.
-slo.netmarble.com                   # Solo Leveling: Arise game server and login endpoint.
-slgame.netmarble.com                # SLA game API for hunter data, dungeons, and gacha.
 nmcdn.io                            # Netmarble CDN used for event banners and thumbnails.
+apis.netmarble.com                  # Netmarble account API.
 
 
 # ----------------------------------------------------------
-# INFINITY NIKKI (Infold Games / Level Infinite)
+# INFINITY NIKKI (Infold Games)
+# Also covers Love and Deepspace's shared Infold account layer.
 # ----------------------------------------------------------
-# levelinfinite.com is already listed above.
-infinitynikki.infoldgames.com       # Infinity Nikki official portal and launcher login.
 infoldgames.com                     # Infold Games developer backend for auth and CDN routing.
-api.infinitynikki.com               # Game API - account login, outfit data, and world events.
-cdn.infinitynikki.com               # CDN for Infinity Nikki outfit assets and patch delivery.
+infinitynikki.infoldgames.com       # Infinity Nikki official portal and launcher login.
 
 
 # ----------------------------------------------------------
-# UMA MUSUME: PRETTY DERBY (Cygames / DMM)
+# UMA MUSUME: PRETTY DERBY (Cygames)
 # ----------------------------------------------------------
+umamusume.com                       # Global (English) release site.
 umamusume.jp                        # Uma Musume official site and authentication.
-api.umamusume.jp                    # Game API - race data, training, gacha, and login.
-cdn.umamusume.jp                    # CDN for horse girl art, race assets, and event banners.
+prd-info-umamusume.akamaized.net    # In-game notices and news.
 cygames.jp                          # Cygames developer backend used in login routing.
 dmm.com                             # DMM platform (PC client login and distribution).
-static.dmm.com                      # DMM static CDN for client assets and login page.
 
 
 # ----------------------------------------------------------
 # DRAGON BALL LEGENDS (Bandai Namco)
 # ----------------------------------------------------------
 bandainamcoent.com                  # Bandai Namco account portal and login endpoint.
-legends.dbz.space                   # Dragon Ball Legends game API and event server.
-dbl.bandainamcoent.com              # Legends-specific subdomain for match and gacha data.
-cdn.legends.dbz.space               # CDN for character card art and battle assets.
-bngi-gate.bandainamcoent.com        # Bandai Namco Game ID gateway - cross-title login.
+dblegends.com                       # Official Dragon Ball Legends site.
+www.dblegends.com                   # Official site (www).
 
 
 # ----------------------------------------------------------
-# DRAGON BALL Z: DOKKAN BATTLE (Bandai Namco)
+# DRAGON BALL Z: DOKKAN BATTLE (Bandai Namco / Akatsuki)
+# bandainamcoent.com listed above under Legends covers the
+# shared Bandai Namco ID layer.
 # ----------------------------------------------------------
-# bandainamcoent.com and bngi-gate.bandainamcoent.com
-# listed above under Legends cover the shared auth layer.
-dbzdokkanbattle.com                 # Dokkan Battle official site and event info.
-api.dbzdokkanbattle.com             # Dokkan game API - login, summons, and event data.
-cdn.dbzdokkanbattle.com             # CDN for Dokkan card art, LR awakening assets, events.
+ishin-global.aktsk.com              # Global game API.
+ishin-production.aktsk.jp           # JP game API.
+aktsk.com                           # Akatsuki (developer) services.
+dbz-dokkanbattle.com                # Official Dokkan Battle site.
 
 
 # ----------------------------------------------------------
 # POKEMON TCG POCKET (DeNA / The Pokemon Company)
 # ----------------------------------------------------------
 pokemon.com                         # Pokemon official site - account login and auth.
-mtcgp.pokemon.com                   # Pokemon TCG Pocket game server and session endpoint.
-api.mtcgp.pokemon.com               # TCG Pocket API - pack opening, battles, and trades.
-cdn.pokemon.com                     # CDN for card art, pack images, and event assets.
+www.pokemon.com                     # Pokemon official site.
+access.pokemon.com                  # Pokemon Trainer Club login.
+club.pokemon.com                    # Pokemon Trainer Club accounts.
+sso.pokemon.com                     # Pokemon single sign-on.
 dena.com                            # DeNA developer backend for session and auth routing.
-dena-games.com                      # DeNA games CDN and additional auth routing endpoint.
 
 
 # ----------------------------------------------------------
-# NEVERNESS TO EVERNESS (Seasun Games)
+# NEVERNESS TO EVERNESS (Hotta Studio / Perfect World)
+# ----------------------------------------------------------
+nte.perfectworld.com                # Official NTE site.
+nevernesstoeverness.com             # Official NTE global site.
+
+
+# ----------------------------------------------------------
+# BLUE ARCHIVE (Nexon)
+# ----------------------------------------------------------
+nexon.com                           # Nexon account portal.
+bluearchive.nexon.com               # Blue Archive global site.
+api-pub.nexon.com                   # Nexon public API - login.
+public.api.nexon.com                # Nexon public API.
+
+
+# ----------------------------------------------------------
+# EPIC SEVEN (Smilegate / STOVE)
+# ----------------------------------------------------------
+onstove.com                         # STOVE platform - login and payments.
+api.onstove.com                     # STOVE account API.
+stove.com                           # STOVE platform.
+epic7.onstove.com                   # Epic Seven official site.
+
+
+# ----------------------------------------------------------
+# GIRLS' FRONTLINE 2: EXILIUM (Sunborn)
+# ----------------------------------------------------------
+sunborngame.com                     # Sunborn account portal.
+gf2exilium.sunborngame.com          # GFL2 global site.
+
+
+# ----------------------------------------------------------
+# AZUR LANE (Manjuu / Yostar)
+# ----------------------------------------------------------
+azurlane.yo-star.com                # Azur Lane global site.
+blhxusgate.yo-star.com              # Azur Lane global gateway - server list.
+
+
+# ----------------------------------------------------------
+# MAHJONG SOUL (Cat Food Studio / Yostar)
+# ----------------------------------------------------------
+mahjongsoul.yo-star.com             # Mahjong Soul global site.
+mahjongsoul.game.yo-star.com        # Global game client.
+game.mahjongsoul.com                # Game client (alternate domain).
+
+
+# ----------------------------------------------------------
+# STELLA SORA (Yostar)
+# ----------------------------------------------------------
+stellasora.global                   # Stella Sora global site.
+
+
+# ----------------------------------------------------------
+# SNOWBREAK: CONTAINMENT ZONE (Seasun Games)
 # ----------------------------------------------------------
 seasungames.com                     # Seasun Games developer portal and account backend.
-nte.seasungames.com                 # NTE official portal, login, and patch download.
-api.nte.seasungames.com             # NTE game API - login, Esper data, and open-world sync.
-cdn.nte.seasungames.com             # CDN for NTE game assets, city textures, and events.
+amazingseasun.com                   # Seasun account portal.
+snowbreak.amazingseasun.com         # Snowbreak official site.
+amazingseasuncdn.com                # Seasun CDN.
+snowbreak-content.amazingseasuncdn.com # Snowbreak game content CDN.
+snowbreak-dl.amazingseasuncdn.com   # Snowbreak client downloads.
+
+
+# ----------------------------------------------------------
+# LOVE AND DEEPSPACE (Infold Games)
+# infoldgames.com is already listed under Infinity Nikki above.
+# ----------------------------------------------------------
+loveanddeepspace.com                # Official site.
+
+
+# ----------------------------------------------------------
+# COOKIE RUN: KINGDOM (Devsisters)
+# ----------------------------------------------------------
+devsisters.com                      # Devsisters account and services.
+cookierun.com                       # Cookie Run official site.
+
+
+# ----------------------------------------------------------
+# PERSONA 5: THE PHANTOM X (Sega / Perfect World)
+# ----------------------------------------------------------
+persona5x.com                       # Official P5X global site.
+
+
+# ----------------------------------------------------------
+# DUET NIGHT ABYSS (Pan Studio / Hero Games)
+# ----------------------------------------------------------
+duetnightabyss.com                  # Official site.
+
+
+# ----------------------------------------------------------
+# BROWN DUST 2 (Neowiz)
+# ----------------------------------------------------------
+browndust2.com                      # Official site.
+neowiz.com                          # Neowiz account services.
 
 
 # ----------------------------------------------------------
