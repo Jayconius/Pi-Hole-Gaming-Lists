@@ -2,7 +2,7 @@
 
 > **DNS whitelists and blocklists for gamers** — keeps achievements, cloud saves, gacha pulls, storefronts, and multiplayer working while blocking ads and trackers across every major gaming platform.
 
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202026-brightgreen?style=flat-square)](https://github.com/Jayconius/Pi-Hole-Gaming-Lists/commits/main)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202026-brightgreen?style=flat-square)](https://github.com/Jayconius/Pi-Hole-Gaming-Lists/commits/main)
 [![Platforms](https://img.shields.io/badge/Platforms-20%2B-blue?style=flat-square)](#-platform-coverage)
 [![Compatible](https://img.shields.io/badge/Compatible-Pi--hole%20%7C%20AdGuard%20Home-orange?style=flat-square)](#-how-to-use)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
@@ -21,16 +21,24 @@
 
 ## 🚀 How to Use
 
-### Pi-hole (v5 / v6)
+### Pi-hole v6
 
 1. Go to your **Pi-hole Admin Dashboard**
-2. Navigate to **Group Management → Adlists** (for blocklists) or **Whitelist** (for whitelists)
+2. Navigate to **Group Management → Lists**
 3. Paste the **Raw URL** from the table below
-4. Click **Add**, then run **Tools → Update Gravity** or run:
+4. Add it as a **blocklist** or an **allowlist**, matching the list type
+5. Run **Tools → Update Gravity** or run:
 
 ```bash
 pihole -g
 ```
+
+### Pi-hole v5
+
+Pi-hole v5 can subscribe to blocklists but not allowlists, so the whitelists can't be added by URL.
+
+- **Blocklist:** add the Raw URL under **Group Management → Adlists**, then update gravity
+- **Whitelists:** add the domains you need one at a time under **Whitelist**, or upgrade to v6
 
 ### AdGuard Home
 
@@ -54,7 +62,7 @@ pihole -g
 
 ### Gaming-Whitelist.txt
 
-Each platform is fully covered for login, achievements, cloud saves, multiplayer, store/CDN, and friend lists.
+Each platform has domains for login, achievements, cloud saves, multiplayer, store/CDN, and friend lists. Checkmarks show intended coverage, not results from testing every platform, so please report anything that breaks.
 
 | Platform | Login | Achievements | Cloud Saves | Store / CDN | Multiplayer |
 |----------|:-----:|:------------:|:-----------:|:-----------:|:-----------:|
@@ -84,7 +92,7 @@ Also includes **anti-cheat** domains (Easy Anti-Cheat, BattlEye) — games using
 
 ### Gaming-Gacha-Whitelist.txt
 
-Covers login, gacha/banner pulls, events, friend lists, and patch delivery for all titles.
+Domains for login, gacha/banner pulls, events, friend lists, and patch delivery, where known. Every domain exists in public DNS, but the list hasn't been tested in the games. Coverage is thinner for titles where only site and login domains are known, such as Dragon Ball Legends, Pokémon TCG Pocket, Neverness to Everness, Path to Nowhere, and most recent additions.
 
 | Game | Developer | Platforms |
 |------|-----------|-----------|
@@ -129,15 +137,19 @@ Covers login, gacha/banner pulls, events, friend lists, and patch delivery for a
 `Gaming-Ads-Blocklist.txt` specifically targets:
 
 - Banner and video ads in **mod managers and mod sites** (CurseForge, Thunderstore Mod Manager, Modrinth App, Nexus Mods website)
-- Ads and sponsored content in **game launchers** (Epic, EA App, GOG)
+- Usage tracking and telemetry in **game launchers** (Epic, EA App)
 - Tracking pixels and telemetry in **software dashboards**
 - Aggressive ad-injection in **free-to-play game UIs**
+
+Most entries come from real ad traffic captured in Thunderstore Mod Manager, Modrinth App, and CurseForge with blocking turned off. Vortex is not included because it reportedly shows no ads.
 
 > ⚠️ **Achievement and login domains are intentionally excluded from the blocklist.** The whitelist files exist precisely to ensure blocking never interferes with core game functionality.
 
 ---
 
 ## ⚠️ Known Quirks
+
+**Exact Matches** — In Pi-hole, list entries match the exact domain only. `doubleclick.net` doesn't cover `securepubads.g.doubleclick.net`, so subdomains are listed separately. When troubleshooting, whitelist the exact domain shown in your query log.
 
 **CurseForge** — If the launcher shows a blank page after applying the blocklist, delete `%AppData%\CurseForge\cache` and restart.
 
